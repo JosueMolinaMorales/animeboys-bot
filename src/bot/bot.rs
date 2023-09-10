@@ -12,6 +12,8 @@ pub struct Bot {
     pub instance_id: String,
     /// The profile to use when connecting to aws
     pub ec2_client: aws_sdk_ec2::Client,
+    /// The role assigned to all new members of the server
+    pub member_role: u64,
 }
 
 impl Bot {
@@ -20,6 +22,7 @@ impl Bot {
         Bot {
             instance_id,
             ec2_client: client,
+            member_role: 342563599572664321,
         }
     }
 
@@ -35,7 +38,38 @@ impl Bot {
 
 #[async_trait]
 impl EventHandler for Bot {
-    async fn guild_member_addition(&self, ctx: Context, new_member: Member) {}
+    async fn guild_member_addition(&self, ctx: Context, new_member: Member) {
+        // Send the user a welcome message
+        if let Err(e) = new_member
+            .user
+            .direct_message(&ctx.http, |m| {
+                m.content(format!(
+                    "Welcome to the Animeboys server, {}! Please read the rules and enjoy your stay!",
+                    new_member.user.name
+                ))
+            })
+            .await
+        {
+            error!("Error sending message: {:?}", e);
+        }
+        // Get the guild_id
+        let guild_id = new_member.guild_id.0;
+        // Get the user_id
+        let user_id = new_member.user.id.0;
+        // Assign them to the member role
+        if let Err(err) = ctx
+            .http
+            .add_member_role(
+                guild_id,
+                user_id,
+                self.member_role,
+                Some("Animeboys Bot Added Role to User"),
+            )
+            .await
+        {
+            error!("Error assigning role to user: {} err: {:?}", user_id, err);
+        }
+    }
 
     async fn message(&self, ctx: Context, msg: Message) {
         // Ignore messages from self
