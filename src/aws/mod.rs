@@ -1,5 +1,7 @@
 use aws_sdk_ec2::Region;
 
+pub mod ecs_commands;
+
 #[derive(Debug)]
 pub struct Ec2Error {
     pub message: String,
