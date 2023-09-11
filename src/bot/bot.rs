@@ -87,9 +87,9 @@ impl EventHandler for Bot {
         // Get the prefix of the message
         let command = msg.content.split('-').collect::<Vec<&str>>();
         let prefix = command[0];
-        let command = command[1];
         match prefix.to_ascii_lowercase().as_str() {
             "$mc" => {
+                let command = command[1];
                 self.ec2_handler(command, &ctx, &msg).await;
             }
             "$help" => {
