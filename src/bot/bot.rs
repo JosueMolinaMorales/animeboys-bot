@@ -106,7 +106,10 @@ impl EventHandler for Bot {
                     error!("Error sending message: {:?}", e);
                 }
             }
-            _ => {
+            prefix => {
+                if !prefix.starts_with('$') {
+                    return;
+                }
                 if let Err(e) = msg
                     .channel_id
                     .say(
