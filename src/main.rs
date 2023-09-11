@@ -13,7 +13,11 @@ async fn main() {
     let token = std::env::var("DISCORD_TOKEN").expect("DISORD_TOKEN is required");
     let instance_id = std::env::var("INSTANCE_ID").expect("INSTANCE_ID is required");
 
-    let intents = GatewayIntents::GUILD_MESSAGES | GatewayIntents::MESSAGE_CONTENT;
+    let intents = GatewayIntents::GUILD_MESSAGES
+        | GatewayIntents::MESSAGE_CONTENT
+        | GatewayIntents::GUILD_MEMBERS
+        | GatewayIntents::GUILD_PRESENCES
+        | GatewayIntents::DIRECT_MESSAGES;
 
     let mut client = Client::builder(&token, intents)
         .event_handler(Bot::new(instance_id).await)

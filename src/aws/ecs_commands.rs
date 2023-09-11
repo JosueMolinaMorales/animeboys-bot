@@ -10,12 +10,30 @@ const AUTHORIZED_USERS: [&str; 3] = ["faultsmelts#0000", "ChrisW#6807", "Gio#633
 
 #[async_trait]
 pub trait EcsCommands {
+    /// Handles the ecs commands
+    /// # Arguments
+    /// * `message` - The message to parse
+    /// * `ctx` - The context of the message
+    /// * `msg` - The message
     async fn ec2_handler(&self, message: &str, ctx: &Context, msg: &Message);
+    /// Starts the ec2 instance
+    /// # Returns
+    /// The status of the instance
     async fn start_instance(&self) -> Result<String, Ec2Error>;
+    /// Stops the ec2 instance
     async fn stop_instance(&self) -> Result<(), Ec2Error>;
+    /// Gets the status of the ec2 instance
+    /// # Returns
+    /// The status of the instance
     async fn get_instance_status(&self) -> Result<String, Ec2Error>;
+    /// Gets the public ip of the ec2 instance
+    /// # Returns
+    /// The public ip of the instance
     async fn get_instance_ip(&self) -> Result<String, Ec2Error>;
-    async fn print_ecs_help(&self) -> String;
+    /// Prints the help message for the ecs commands
+    /// # Returns
+    /// The help message
+    fn print_ecs_help(&self) -> String;
 }
 
 #[async_trait]
@@ -30,11 +48,7 @@ impl EcsCommands for Bot {
             ("status", _) => get_status(self, ctx, msg).await,
             ("getip", _) => get_ip(self, ctx, msg).await,
             ("help", _) => {
-                if let Err(e) = msg
-                    .channel_id
-                    .say(&ctx.http, self.print_ecs_help().await)
-                    .await
-                {
+                if let Err(e) = msg.channel_id.say(&ctx.http, self.print_ecs_help()).await {
                     error!("Error sending message: {:?}", e);
                 }
             }
@@ -133,13 +147,13 @@ impl EcsCommands for Bot {
             .to_string())
     }
 
-    async fn print_ecs_help(&self) -> String {
+    fn print_ecs_help(&self) -> String {
         "
-        $mc-start - Starts the Minecraft server (REQUIRES AUTHORIZATION)
-        $mc-stop - Stops the Minecraft server (REQUIRES AUTHORIZATION)
-        $mc-status - Gets the status of the Minecraft server
-        $mc-getip - Gets the public ip of the Minecraft server
-        $mc-help - Displays this message
+        $mc-start: Starts the Minecraft server (REQUIRES AUTHORIZATION)
+        $mc-stop: Stops the Minecraft server (REQUIRES AUTHORIZATION)
+        $mc-status: Gets the status of the Minecraft server
+        $mc-getip: Gets the public ip of the Minecraft server
+        $mc-help: Displays this message
         "
         .into()
     }
