@@ -1,0 +1,32 @@
+version: 2.1
+
+orbs:
+  docker: circleci/docker@2.0.3
+
+executors:
+  rust-executor:
+    working_directory: ~/animeboys-bot
+    docker:
+      - image: cimg/rust:1.67.0
+
+workflows:
+  deploy-production:
+    jobs:
+      - docker/publish:
+          context:
+            - DOCKERHUB
+          image: "jmorales15/animeboys-bot"
+          tag: $(cat ./Cargo.toml | grep version | head -1 | grep -o '"[^"]\+"' | sed -e 's/^"//' -e 's/"$//')
+          filters:
+            branches:
+              only: /main/
+
+      - docker/publish:
+          name: publish-docker-prod
+          context:
+            - DOCKERHUB
+          image: "jmorales15/animeboys-bot"
+          tag: latest
+          filters:
+            branches:
+              only: /main/

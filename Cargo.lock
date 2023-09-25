@@ -28,7 +28,6 @@ dependencies = [
  "dotenv",
  "phf",
  "reqwest",
- "ring",
  "serde",
  "serde_json",
  "serenity",
