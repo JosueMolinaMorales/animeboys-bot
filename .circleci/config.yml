@@ -7,7 +7,8 @@ executors:
   rust-executor:
     working_directory: ~/animeboys-bot
     docker:
-      - image: cimg/rust:1.67.0
+      - image: ubuntu-2204:2023.07.1
+    resource_class: arm.medium
 
 workflows:
   deploy-production:
