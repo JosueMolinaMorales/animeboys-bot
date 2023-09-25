@@ -6,8 +6,8 @@ orbs:
 executors:
   rust-executor:
     working_directory: ~/animeboys-bot
-    docker:
-      - image: ubuntu-2204:2023.07.1
+    machine:
+      image: ubuntu-2204:2023.07.1
     resource_class: arm.medium
 
 workflows:
