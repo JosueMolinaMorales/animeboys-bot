@@ -67,7 +67,7 @@ impl EcsCommands for Bot {
                     .channel_id
                     .say(
                         &ctx.http,
-                        "Unknown command. Try $help for a list of commands.",
+                        "Unknown command. Try `$mc help` for a list of commands.",
                     )
                     .await
                 {
@@ -149,11 +149,12 @@ impl EcsCommands for Bot {
 
     fn print_ecs_help(&self) -> String {
         "
-        $mc-start: Starts the Minecraft server (REQUIRES AUTHORIZATION)
-        $mc-stop: Stops the Minecraft server (REQUIRES AUTHORIZATION)
-        $mc-status: Gets the status of the Minecraft server
-        $mc-getip: Gets the public ip of the Minecraft server
-        $mc-help: Displays this message
+        Commands for managing the Minecraft server:
+        `$mc start`: Starts the Minecraft server (REQUIRES AUTHORIZATION)
+        `$mc stop`: Stops the Minecraft server (REQUIRES AUTHORIZATION)
+        `$mc status`: Gets the status of the Minecraft server
+        `$mc getip`: Gets the public ip of the Minecraft server
+        `$mc help`: Displays this message
         "
         .into()
     }

@@ -1,10 +1,12 @@
 use animeboys_bot::bot::Bot;
+use dotenv::dotenv;
 use serenity::prelude::*;
 
 /// To Cross compile for linux
 /// cross build --release --target armv7-unknown-linux-gnueabihf
 #[tokio::main]
 async fn main() {
+    dotenv().ok();
     tracing_subscriber::fmt()
         .with_target(false)
         .with_max_level(tracing::Level::DEBUG)

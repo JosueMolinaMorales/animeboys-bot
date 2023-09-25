@@ -1,4 +1,7 @@
-use crate::aws::{self, ecs_commands::EcsCommands};
+use crate::{
+    aws::{self, ecs_commands::EcsCommands},
+    wz::WzLoadoutCommands,
+};
 use serenity::async_trait;
 use serenity::model::channel::Message;
 use serenity::model::gateway::Ready;
@@ -29,8 +32,9 @@ impl Bot {
     pub async fn print_help(&self) -> String {
         "
     Welcome to the Animeboys Bot! Here are the commands you can use:
-        $mc-help - Displays the help message for managing the minecraft server
-        $help    - Displays this message
+        `$mc help` - Displays the help message for managing the minecraft server
+        `$wz help` - Displays the help message for managing the warzone server
+        `$help`    - Displays this message
         "
         .into()
     }
@@ -76,7 +80,7 @@ impl EventHandler for Bot {
         if msg.author.bot {
             return;
         }
-        if msg.channel_id.0 != CHANNEL_ID {
+        if msg.channel_id.0 != CHANNEL_ID && !msg.is_private() {
             info!("Message sent in wrong channel");
             return;
         }
@@ -85,12 +89,30 @@ impl EventHandler for Bot {
         info!("Message received: {}", msg.content);
 
         // Get the prefix of the message
-        let command = msg.content.split('-').collect::<Vec<&str>>();
+        let mut command = msg.content.split(' ').collect::<Vec<&str>>();
         let prefix = command[0];
         match prefix.to_ascii_lowercase().as_str() {
             "$mc" => {
+                // Ensure there is a command after the prefix
+                if command.len() < 2 {
+                    if let Err(e) = msg
+                        .channel_id
+                        .say(
+                            &ctx.http,
+                            "Unknown command. Try $mc help for a list of commands.",
+                        )
+                        .await
+                    {
+                        error!("Error sending message: {:?}", e);
+                    }
+                    return;
+                }
                 let command = command[1];
                 self.ec2_handler(command, &ctx, &msg).await;
+            }
+            "$wz" => {
+                command.remove(0);
+                self.wz_loadout_handler(command, &ctx, &msg).await;
             }
             "$help" => {
                 if let Err(e) = msg.channel_id.say(&ctx.http, self.print_help().await).await {
