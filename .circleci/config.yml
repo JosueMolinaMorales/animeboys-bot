@@ -6,15 +6,32 @@ orbs:
 executors:
   rust-executor:
     working_directory: ~/animeboys-bot
-    docker:
-      - image: cimg/rust:1.67.0
+    machine:
+      image: ubuntu-2204:2023.07.1
+    resource_class: arm.medium
 
+jobs:
+  publish-docker:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - checkout
+      - docker/publish:
+          context:
+            - DOCKERHUB
+          image: "jmorales15/animeboys-bot"
+          tag: $(cat ./Cargo.toml | grep version | head -1 | grep -o '"[^"]\+"' | sed -e 's/^"//' -e 's/"$//')
+          filters:
+            branches:
+              only: /main/
 workflows:
   deploy-production:
     jobs:
       - docker/publish:
           context:
             - DOCKERHUB
+          executor: rust-executor
           image: "jmorales15/animeboys-bot"
           tag: $(cat ./Cargo.toml | grep version | head -1 | grep -o '"[^"]\+"' | sed -e 's/^"//' -e 's/"$//')
           filters:
@@ -25,6 +42,7 @@ workflows:
           name: publish-docker-prod
           context:
             - DOCKERHUB
+          executor: rust-executor
           image: "jmorales15/animeboys-bot"
           tag: latest
           filters:
