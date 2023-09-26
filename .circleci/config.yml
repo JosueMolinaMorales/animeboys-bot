@@ -42,6 +42,7 @@ workflows:
           name: publish-docker-prod
           context:
             - DOCKERHUB
+          executor: rust-executor
           image: "jmorales15/animeboys-bot"
           tag: latest
           filters:
