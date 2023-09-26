@@ -2,7 +2,6 @@ version: 2.1
 
 orbs:
   docker: circleci/docker@2.0.3
-  rust: circleci/rust@1.6.0
 
 executors:
   rust-executor:
