@@ -10,24 +10,23 @@ executors:
       image: ubuntu-2204:2023.07.1
     resource_class: arm.medium
 
-workflows:
-  deploy-production:
-    jobs:
+jobs:
+  publish-docker:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - checkout
       - docker/publish:
           context:
             - DOCKERHUB
           image: "jmorales15/animeboys-bot"
           tag: $(cat ./Cargo.toml | grep version | head -1 | grep -o '"[^"]\+"' | sed -e 's/^"//' -e 's/"$//')
-          filters:
-            branches:
-              only: /main/
 
-      - docker/publish:
-          name: publish-docker-prod
-          context:
-            - DOCKERHUB
-          image: "jmorales15/animeboys-bot"
-          tag: latest
+workflows:
+  deploy-production:
+    jobs:
+      - publish-docker:
           filters:
             branches:
               only: /main/
