@@ -22,11 +22,28 @@ jobs:
             - DOCKERHUB
           image: "jmorales15/animeboys-bot"
           tag: $(cat ./Cargo.toml | grep version | head -1 | grep -o '"[^"]\+"' | sed -e 's/^"//' -e 's/"$//')
-
+          filters:
+            branches:
+              only: /main/
 workflows:
   deploy-production:
     jobs:
-      - publish-docker:
+      - docker/publish:
+          context:
+            - DOCKERHUB
+          executor: rust-executor
+          image: "jmorales15/animeboys-bot"
+          tag: $(cat ./Cargo.toml | grep version | head -1 | grep -o '"[^"]\+"' | sed -e 's/^"//' -e 's/"$//')
+          filters:
+            branches:
+              only: /main/
+
+      - docker/publish:
+          name: publish-docker-prod
+          context:
+            - DOCKERHUB
+          image: "jmorales15/animeboys-bot"
+          tag: latest
           filters:
             branches:
               only: /main/
