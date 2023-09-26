@@ -11,10 +11,9 @@ executors:
       image: ubuntu-2204:2023.07.1
     resource_class: arm.medium
 
-jobs:
-  publish-docker:
-    executor: rust-executor
-    steps:
+workflows:
+  deploy-production:
+    jobs:
       - rust/install
       - docker/publish:
           context:
@@ -24,7 +23,13 @@ jobs:
           filters:
             branches:
               only: /main/
-workflows:
-  deploy-production:
-    jobs:
-      - publish-docker
+
+      - docker/publish:
+          name: publish-docker-prod
+          context:
+            - DOCKERHUB
+          image: "jmorales15/animeboys-bot"
+          tag: latest
+          filters:
+            branches:
+              only: /main/
