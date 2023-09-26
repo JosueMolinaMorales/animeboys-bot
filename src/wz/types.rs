@@ -3,7 +3,58 @@ use std::{
     fmt::{Display, Formatter},
 };
 
+use phf::phf_map;
 use serde::{Deserialize, Serialize};
+
+/// Current as of Warzone Season 5 (9/24/2023)
+pub static WZ_WEAPONS: phf::Map<&str, WzWeaponName> = phf_map! {
+    "50gs" => WzWeaponName::FiftyGS,
+    "556-icarus" => WzWeaponName::FiveFiveSixIcarus,
+    "9mm-daemon" => WzWeaponName::NineMilliMeterDaemon,
+    "bas-p" => WzWeaponName::BasP,
+    "basilisk" => WzWeaponName::Basilisk,
+    "bryson-800" => WzWeaponName::Bryson800,
+    "bryson-890" => WzWeaponName::Bryson890,
+    "carrack-300" => WzWeaponName::Carrack300,
+    "chimera" => WzWeaponName::Chimera,
+    "cronen-squall" => WzWeaponName::CronenSquall,
+    "ebr-14" => WzWeaponName::Ebr14,
+    "expedite-12" => WzWeaponName::Expedite12,
+    "fennec-45" => WzWeaponName::Fennec45,
+    "fjx-imperium" => WzWeaponName::FjxImperium,
+    "fr-avancer" => WzWeaponName::FrAvancer,
+    "fss-hurricane" => WzWeaponName::FssHurricane,
+    "ftac-recon" => WzWeaponName::FtacRecon,
+    "ftac-siege" => WzWeaponName::FtacSiege,
+    "gs-magma" => WzWeaponName::GsMagma,
+    "hcr-56" => WzWeaponName::Hcr56,
+    "iso-45" => WzWeaponName::Iso45,
+    "iso-9mm" => WzWeaponName::Iso9mm,
+    "iso-hemlock" => WzWeaponName::IsoHemlock,
+    "kastov-545" => WzWeaponName::Kastov545,
+    "kastov-74u" => WzWeaponName::Kastov74u,
+    "kastov-762" => WzWeaponName::Kastov762,
+    "kv-broadside" => WzWeaponName::KvBroadside,
+    "la-b-330" => WzWeaponName::LaB330,
+    "lachmann-556" => WzWeaponName::Lachmann556,
+    "lachmann-762" => WzWeaponName::Lachmann762,
+    "lachmann-shroud" => WzWeaponName::LachmannShroud,
+    "lachmann-sub" => WzWeaponName::LachmannSub,
+    "lm-s" => WzWeaponName::LmS,
+    "lockwood-300" => WzWeaponName::Lockwood300,
+    "lockwood-mk2" => WzWeaponName::LockwoodMk2,
+    "m13b" => WzWeaponName::M13b,
+    "m13c" => WzWeaponName::M13c,
+    "m16" => WzWeaponName::M16,
+    "m4" => WzWeaponName::M4,
+    "mcpr-300" => WzWeaponName::Mcpr300,
+    "minibak" => WzWeaponName::Minibak,
+    "mx-guardian" => WzWeaponName::MxGuardian,
+    "mx9" => WzWeaponName::Mx9,
+    "p890" => WzWeaponName::P890,
+    "pdsw-528" => WzWeaponName::Pdsw528,
+    "raal-mg" => WzWeaponName::RaalMg
+};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct VerticalTuning {
@@ -170,7 +221,7 @@ impl Weapon {
         loadout_string.push_str(&format!("Description: {}\n", self.description));
         loadout_string.push_str(&format!("Attachments:\n"));
         for (key, value) in self.get_loadout_attachments() {
-            loadout_string.push_str(&format!("{} - {}\n", key, value));
+            loadout_string.push_str(&format!("    {} - {}\n", key, value));
         }
         loadout_string
     }
@@ -410,14 +461,14 @@ impl Display for Playstyles {
     }
 }
 
-#[derive(Debug, Serialize, Deserialize, Clone)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 #[serde(rename_all = "camelCase")]
 #[serde(default)]
 pub struct TierListResponse {
     pub wz_stats_tier_list: WzStatsTierList,
 }
 
-#[derive(Debug, Serialize, Deserialize, Clone)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 #[serde(rename_all = "camelCase")]
 #[serde(default)]
 pub struct WzStatsTierList {
@@ -428,20 +479,8 @@ pub struct WzStatsTierList {
     pub wz2_ranked: Tiers,
 }
 
-impl Default for WzStatsTierList {
-    fn default() -> Self {
-        Self {
-            streamer_profile_id: Default::default(),
-            ashika_island: Default::default(),
-            al_mazrah: Default::default(),
-            mw2_ranked: Default::default(),
-            wz2_ranked: Default::default(),
-        }
-    }
-}
-
-#[derive(Debug, Serialize, Deserialize, Clone)]
-#[serde(rename_all = "camelCase")]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
+#[serde(rename_all = "UPPERCASE")]
 #[serde(default)]
 pub struct Tiers {
     pub meta: Vec<String>,
@@ -451,14 +490,23 @@ pub struct Tiers {
     pub d: Vec<String>,
 }
 
-impl Default for Tiers {
-    fn default() -> Self {
-        Self {
-            meta: vec![],
-            a: vec![],
-            b: vec![],
-            c: vec![],
-            d: vec![],
-        }
+impl Tiers {
+    pub fn get_top_10(&self) -> Vec<String> {
+        let mut top_ten_weapons: Vec<String> = vec![];
+        let mut get_weapons = |weapons: &Vec<String>| {
+            for weapon in weapons {
+                if top_ten_weapons.len() >= 10 {
+                    break;
+                }
+                top_ten_weapons.push(weapon.to_owned())
+            }
+        };
+        get_weapons(&self.meta);
+        get_weapons(&self.a);
+        get_weapons(&self.b);
+        get_weapons(&self.c);
+        get_weapons(&self.d);
+
+        top_ten_weapons
     }
 }
