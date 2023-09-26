@@ -14,7 +14,6 @@ executors:
 workflows:
   deploy-production:
     jobs:
-      - rust/install
       - docker/publish:
           context:
             - DOCKERHUB
