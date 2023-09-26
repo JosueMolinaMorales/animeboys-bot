@@ -14,7 +14,7 @@ COPY ./src ./src
 RUN cargo build --release
 
 # Stage 2: Create a minimal runtime image
-FROM arm32v7/rust:slim-buster
+FROM arm32v7/rust:slim
 
 # Set the working directory
 WORKDIR /app
