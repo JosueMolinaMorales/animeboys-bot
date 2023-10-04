@@ -315,80 +315,6 @@
             "externalSourceImage": null
         },
         {
-            "id": "fr-avancer-wzstats-ff2402",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "title": "",
-            "barrel": {
-                "attachmentId": "435mm-fr435",
-                "verticalTuning": {
-                    "value": 0.11
-                },
-                "horizontalTuning": {
-                    "value": 0.14
-                },
-                "slot": "barrel",
-                "name": "435MM FR435"
-            },
-            "muzzle": {
-                "attachmentId": "komodo-heavy",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.35
-                },
-                "slot": "muzzle",
-                "name": "Komodo Heavy"
-            },
-            "addedAt": 1691162371.524,
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-m4",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 1,
-            "rearGrip": {
-                "attachmentId": "sa-ion",
-                "verticalTuning": {
-                    "value": 1
-                },
-                "horizontalTuning": {
-                    "value": 0.45
-                },
-                "slot": "rearGrip",
-                "name": "SA ION"
-            },
-            "weaponId": "fr-avancer",
-            "createdAt": "2023-08-04T15:16:25.910Z",
-            "playstyle": "LOW_RECOIL",
-            "tierScore": 0,
-            "updatedAt": "2023-08-04T15:20:31.831Z",
-            "description": "This build has the lowest possible recoil for the FR Avancer at the cost of using only the iron sight which is very clean and provides a clear picture.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "ftac-ripper-56",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": -0.4
-                },
-                "slot": "underbarrel",
-                "name": "FTAC Ripper 56"
-            },
-            "displayOrder": 0,
-            "isAshikaBuild": true,
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
             "id": "fr-avancer-wzstats-4ac8d1",
             "cons": [],
             "pros": [],
@@ -460,82 +386,6 @@
             "statsAnalysis": "Stats Analysis Text",
             "interactionCount": null,
             "authorDisplayName": "WZStats",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "fr-avancer-wzstats-2476fd",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -1.65
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "435mm-fr435",
-                "verticalTuning": {
-                    "value": 0.11
-                },
-                "horizontalTuning": {
-                    "value": 0.14
-                },
-                "slot": "barrel",
-                "name": "435MM FR435"
-            },
-            "muzzle": {
-                "attachmentId": "komodo-heavy",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.35
-                },
-                "slot": "muzzle",
-                "name": "Komodo Heavy"
-            },
-            "addedAt": 1690529800.409,
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-m4",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 4,
-            "prosCons": "Pros & Cons Text",
-            "weaponId": "fr-avancer",
-            "createdAt": "2023-07-28T07:36:16.702Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-08-03T09:09:34.314Z",
-            "description": "Very high fire rate assault rifle! One of the best ARs in the game now. This build focuses on recoil control to make long range combat easier.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "ftac-ripper-56",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": -0.4
-                },
-                "slot": "underbarrel",
-                "name": "FTAC Ripper 56"
-            },
-            "displayOrder": 0,
-            "statsAnalysis": "Stats Analysis Text",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": true,
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -852,6 +702,86 @@
             "externalSourceImage": null
         },
         {
+            "id": "kastov-762-wzstats-315bd7",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "cronen-mini-pro",
+                "verticalTuning": {
+                    "value": -1.16
+                },
+                "horizontalTuning": {
+                    "value": -2.25
+                },
+                "slot": "optic",
+                "name": "Cronen Mini Pro"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "kas-10-584mm-barrel",
+                "verticalTuning": {
+                    "value": 0.23
+                },
+                "horizontalTuning": {
+                    "value": -0.22
+                },
+                "slot": "barrel",
+                "name": "KAS-10 584MM Barrel"
+            },
+            "muzzle": {
+                "attachmentId": "ty-lr8",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.14
+                },
+                "slot": "muzzle",
+                "name": "TY-LR8"
+            },
+            "addedAt": 1692998095.862,
+            "adsTime": "422",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "40-round-mag-kastovia",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "40 Round Mag"
+            },
+            "position": 10,
+            "rearGrip": {
+                "attachmentId": "demo-x2-grip",
+                "verticalTuning": {
+                    "value": 1
+                },
+                "horizontalTuning": {
+                    "value": 0.45
+                },
+                "slot": "rearGrip",
+                "name": "Demo-X2 Grip"
+            },
+            "weaponId": "kastov-762",
+            "createdAt": "2023-08-25T21:06:40.981Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T10:37:46.079Z",
+            "description": "This build focuses on a good balance between ADS speed, mobility and recoil control. Perfect for small maps.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "isAshikaBuild": true,
+            "movementSpeed": "7.35",
+            "bulletVelocity": "692",
+            "adsMovementSpeed": "2.35",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "verticalRecoilReduction": ".83",
+            "horizontalRecoilReduction": ".67",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
             "id": "iso-9mm-wzstats-c2673d",
             "cons": [],
             "pros": [],
@@ -868,7 +798,7 @@
                 "name": "VLK LZR 7MW"
             },
             "stock": {
-                "attachmentId": "demo-fade-pro-stock",
+                "attachmentId": "demo-fade-tac",
                 "verticalTuning": {
                     "value": -4
                 },
@@ -876,19 +806,19 @@
                     "value": -1.47
                 },
                 "slot": "stock",
-                "name": "Demo Fade Pro Stock"
+                "name": "Demo Fade Tac"
             },
             "title": "",
-            "muzzle": {
-                "attachmentId": "spiral-v3.5-flash-hider",
+            "barrel": {
+                "attachmentId": "7\"-ex-raptor-v2",
                 "verticalTuning": {
-                    "value": -0.19
-                },
-                "horizontalTuning": {
                     "value": 0.4
                 },
-                "slot": "muzzle",
-                "name": "Spiral V3.5 Flash Hider"
+                "horizontalTuning": {
+                    "value": 0.22
+                },
+                "slot": "barrel",
+                "name": "7\" EX Raptor-V2"
             },
             "addedAt": 1695394593.258,
             "authorId": "wzstats",
@@ -900,28 +830,102 @@
                 "name": "50 Round Drum"
             },
             "position": 10,
+            "rearGrip": {
+                "attachmentId": "a30-stout",
+                "verticalTuning": {
+                    "value": -1
+                },
+                "horizontalTuning": {
+                    "value": -0.45
+                },
+                "slot": "rearGrip",
+                "name": "A30 Stout"
+            },
             "weaponId": "iso-9mm",
             "createdAt": "2023-09-22T14:50:28.919Z",
             "playstyle": "SHORT_RANGE",
             "tierScore": 0,
-            "updatedAt": "2023-09-22T14:56:33.816Z",
-            "ammunition": {
-                "attachmentId": "9mm-hollowpoint",
-                "verticalTuning": {
-                    "value": 0.5
-                },
-                "horizontalTuning": {
-                    "value": -5.52
-                },
-                "slot": "ammunition",
-                "name": "9mm Hollowpoint"
-            },
-            "description": "",
+            "updatedAt": "2023-10-02T14:52:27.596Z",
+            "description": "New Season 6 SMG. Fast fire rate, high mobility, and fast time to kill.",
             "isPublished": true,
             "displayOrder": 0,
             "interactionCount": null,
             "authorDisplayName": "WZStats",
             "isWarzoneRankedBuild": true,
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "fr-avancer-wzstats-6ca077",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "title": "",
+            "barrel": {
+                "attachmentId": "600mm-fr-longbore",
+                "verticalTuning": {
+                    "value": -0.32
+                },
+                "horizontalTuning": {
+                    "value": 0.21
+                },
+                "slot": "barrel",
+                "name": "600MM FR Longbore"
+            },
+            "muzzle": {
+                "attachmentId": "komodo-heavy",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.35
+                },
+                "slot": "muzzle",
+                "name": "Komodo Heavy"
+            },
+            "addedAt": 1696242140.396,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-kastovia",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 10,
+            "rearGrip": {
+                "attachmentId": "sa-ion",
+                "verticalTuning": {
+                    "value": 1
+                },
+                "horizontalTuning": {
+                    "value": 0.45
+                },
+                "slot": "rearGrip",
+                "name": "SA ION"
+            },
+            "weaponId": "fr-avancer",
+            "createdAt": "2023-10-02T10:17:51.403Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T10:22:20.494Z",
+            "description": "This build focuses on recoil control and damage range. Perfect for resurgence. Can also be used on big maps if you enjoy using the iron sight.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": -0.4
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "isAshikaBuild": true,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -1089,6 +1093,317 @@
             "authorDisplayName": "WZStats",
             "verticalRecoilReduction": "1",
             "horizontalRecoilReduction": "1",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "fr-avancer-wzstats-2476fd",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -1.65
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "600mm-fr-longbore",
+                "verticalTuning": {
+                    "value": -0.32
+                },
+                "horizontalTuning": {
+                    "value": 0.21
+                },
+                "slot": "barrel",
+                "name": "600MM FR Longbore"
+            },
+            "muzzle": {
+                "attachmentId": "komodo-heavy",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.35
+                },
+                "slot": "muzzle",
+                "name": "Komodo Heavy"
+            },
+            "addedAt": 1690529800.409,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-m4",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 4,
+            "prosCons": "Pros & Cons Text",
+            "weaponId": "fr-avancer",
+            "createdAt": "2023-07-28T07:36:16.702Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T09:48:10.787Z",
+            "description": "Very high fire rate assault rifle! One of the best ARs in the game now. This build focuses on recoil control and damage range to make long range combat easier.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": -0.4
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "statsAnalysis": "Stats Analysis Text",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": true,
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "kastov-762-wzstats-9d0c47",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -2.13
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "kas-10-584mm-barrel",
+                "verticalTuning": {
+                    "value": 0.23
+                },
+                "horizontalTuning": {
+                    "value": -0.22
+                },
+                "slot": "barrel",
+                "name": "KAS-10 584MM Barrel"
+            },
+            "muzzle": {
+                "attachmentId": "ty-lr8",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.15
+                },
+                "slot": "muzzle",
+                "name": "TY-LR8"
+            },
+            "addedAt": 1681911333.12,
+            "adsTime": "462",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "40-round-mag-kastovia",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "40 Round Mag"
+            },
+            "position": 1,
+            "weaponId": "kastov-762",
+            "createdAt": "2023-04-19T13:29:15.308Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T10:48:33.611Z",
+            "description": "This build focuses recoil control and damage range to be as effective as possible and easy to use at long range.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.4
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "movementSpeed": "7.35",
+            "bulletVelocity": "692",
+            "adsMovementSpeed": "2.3",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": ".86",
+            "horizontalRecoilReduction": ".68",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "lockwood-300-wzstats-99ac3e",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "corio-cqc-scope",
+                "verticalTuning": {
+                    "value": -1.06
+                },
+                "horizontalTuning": {
+                    "value": 0.75
+                },
+                "slot": "optic",
+                "name": "Corio CQC Scope"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "matuzek-812-barrel",
+                "verticalTuning": {
+                    "value": -0.34
+                },
+                "horizontalTuning": {
+                    "value": 0.32
+                },
+                "slot": "barrel",
+                "name": "Matuzek 812 Barrel"
+            },
+            "muzzle": {
+                "attachmentId": "sakin-db107",
+                "verticalTuning": {
+                    "value": -0.77
+                },
+                "horizontalTuning": {
+                    "value": 0.000001
+                },
+                "slot": "muzzle",
+                "name": "Sakin DB107"
+            },
+            "addedAt": 1696255716.849,
+            "authorId": "wzstats",
+            "position": 10,
+            "weaponId": "lockwood-300",
+            "createdAt": "2023-10-02T14:02:33.601Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T14:08:36.691Z",
+            "ammunition": {
+                "attachmentId": "12-gauge-slug",
+                "verticalTuning": {
+                    "value": 0.7
+                },
+                "horizontalTuning": {
+                    "value": -9
+                },
+                "slot": "ammunition",
+                "name": "12 Gauge Slug"
+            },
+            "description": "Super powerful slug rounds combined with the Maelstorm Dual Trigger turn this shotgun into a \"One Shot Sniper\" for long range. Very fun to use.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "triggerAction": {
+                "attachmentId": "maelstorm-dual-trigger",
+                "verticalTuning": {
+                    "value": -0.18
+                },
+                "horizontalTuning": {
+                    "value": 0.1
+                },
+                "slot": "triggerAction",
+                "name": "Maelstorm Dual Trigger"
+            },
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "vaznev-9k-wzstats-79AC",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "fss-ole-v-laser",
+                "verticalTuning": {
+                    "value": -0.24
+                },
+                "horizontalTuning": {
+                    "value": -23.03
+                },
+                "slot": "laser",
+                "name": "FSS OLE-V laser"
+            },
+            "stock": {
+                "attachmentId": "otrezat-stock",
+                "verticalTuning": 0,
+                "horizontalTuning": {
+                    "value": -1.32
+                },
+                "slot": "stock",
+                "name": "Otrezat Stock"
+            },
+            "title": "Best Build",
+            "barrel": {
+                "attachmentId": "kas-1-381mm",
+                "verticalTuning": {
+                    "value": -0.5
+                },
+                "horizontalTuning": {
+                    "value": -0.21
+                },
+                "slot": "barrel",
+                "name": "KAS-1 381MM"
+            },
+            "addedAt": 1679906562.354,
+            "adsTime": "265",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "45-round-mag-kastovia",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "45 Round Mag"
+            },
+            "position": 1,
+            "rearGrip": {
+                "attachmentId": "true-tac-grip",
+                "verticalTuning": {
+                    "value": -0.19
+                },
+                "horizontalTuning": {
+                    "value": -0.12
+                },
+                "slot": "rearGrip",
+                "name": "True-TAC Grip"
+            },
+            "weaponId": "vaznev-9k",
+            "createdAt": "2022-12-01T13:21:41.392Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": 996,
+            "updatedAt": "2023-09-14T23:11:07.374Z",
+            "description": "This Vaznev-9K is balanced for mobility & recoil control. The barrel increases the Damage Range and makes it deadly for a longer distance.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "movementSpeed": "7.56",
+            "bulletVelocity": "608",
+            "adsMovementSpeed": "3.5",
+            "interactionCount": 1736,
+            "authorDisplayName": "wzstats",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": "1.06",
+            "horizontalRecoilReduction": "1.06",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -1307,6 +1622,160 @@
             "externalSourceImage": null
         },
         {
+            "id": "lachmann-762-wzstats-B264",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "fss-ole-v-laser",
+                "verticalTuning": {
+                    "value": -0.27
+                },
+                "horizontalTuning": {
+                    "value": -26.32
+                },
+                "slot": "laser",
+                "name": "FSS OLE-V laser"
+            },
+            "stock": {
+                "attachmentId": "ft-mobile-stock",
+                "verticalTuning": {
+                    "value": -4
+                },
+                "horizontalTuning": {
+                    "value": -2.4
+                },
+                "slot": "stock",
+                "name": "FT Mobile Stock"
+            },
+            "title": "Best Build",
+            "barrel": {
+                "attachmentId": "lm-aurora-90-barrel",
+                "verticalTuning": {
+                    "value": -0.32
+                },
+                "horizontalTuning": {
+                    "value": -0.14
+                },
+                "slot": "barrel",
+                "name": "LM Aurora 90 Barrel"
+            },
+            "muzzle": {
+                "attachmentId": "eight-point-flash-hider",
+                "verticalTuning": {
+                    "value": 0.42
+                },
+                "horizontalTuning": {
+                    "value": 0.15
+                },
+                "slot": "muzzle",
+                "name": "Eight-Point Flash Hider"
+            },
+            "addedAt": 1696250424.247,
+            "adsTime": "286",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "50-round-drum-lachmann-meer",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "50 Round Drum"
+            },
+            "position": 2,
+            "weaponId": "lachmann-762",
+            "createdAt": "2022-12-06T10:27:16.955Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": 968,
+            "updatedAt": "2023-10-02T13:05:02.938Z",
+            "description": "Insane Time to Kill in close range. Use in Full-Auto fire mode.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "isAshikaBuild": true,
+            "movementSpeed": "7.41",
+            "bulletVelocity": "607",
+            "adsMovementSpeed": "2.54",
+            "interactionCount": null,
+            "authorDisplayName": "wzstats",
+            "verticalRecoilReduction": ".94",
+            "horizontalRecoilReduction": ".94",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "fr-avancer-wzstats-ff2402",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "title": "",
+            "barrel": {
+                "attachmentId": "435mm-fr435",
+                "verticalTuning": {
+                    "value": 0.11
+                },
+                "horizontalTuning": {
+                    "value": 0.14
+                },
+                "slot": "barrel",
+                "name": "435MM FR435"
+            },
+            "muzzle": {
+                "attachmentId": "komodo-heavy",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.35
+                },
+                "slot": "muzzle",
+                "name": "Komodo Heavy"
+            },
+            "addedAt": 1691162371.524,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-m4",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 1,
+            "rearGrip": {
+                "attachmentId": "sa-ion",
+                "verticalTuning": {
+                    "value": 1
+                },
+                "horizontalTuning": {
+                    "value": 0.45
+                },
+                "slot": "rearGrip",
+                "name": "SA ION"
+            },
+            "weaponId": "fr-avancer",
+            "createdAt": "2023-08-04T15:16:25.910Z",
+            "playstyle": "LOW_RECOIL",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T10:25:36.480Z",
+            "description": "This build has the lowest possible recoil for the FR Avancer at the cost of using only the iron sight which is very clean and provides a clear picture.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": -0.4
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "isAshikaBuild": false,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
             "id": "raal-mg-wzstats-744a09",
             "cons": [],
             "pros": [],
@@ -1463,92 +1932,12 @@
             "externalSourceImage": null
         },
         {
-            "id": "tempus-razorback-wzstats-5b6cc0",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -1.06
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "16\"-tankr-v",
-                "verticalTuning": {
-                    "value": 0.5
-                },
-                "horizontalTuning": {
-                    "value": 0.21
-                },
-                "slot": "barrel",
-                "name": "16\" TANKR-V"
-            },
-            "muzzle": {
-                "attachmentId": "fjx-fulcrum-pro",
-                "verticalTuning": {
-                    "value": 0.49
-                },
-                "horizontalTuning": {
-                    "value": -0.08
-                },
-                "slot": "muzzle",
-                "name": "FJX Fulcrum Pro"
-            },
-            "addedAt": 1690245646.191,
-            "adsTime": "432",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-tidal-recon",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 2,
-            "weaponId": "tempus-razorback",
-            "createdAt": "2023-06-14T18:10:43.464Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-19T15:39:06.899Z",
-            "description": "This build is optimized for long range engagements. Extremely low recoil.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "dm-proto-grip",
-                "verticalTuning": {
-                    "value": 0.34
-                },
-                "horizontalTuning": {
-                    "value": 0.14
-                },
-                "slot": "underbarrel",
-                "name": "DM Proto-Grip"
-            },
-            "displayOrder": 0,
-            "movementSpeed": "6.85",
-            "bulletVelocity": "689",
-            "adsMovementSpeed": "1.94",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": ".68",
-            "horizontalRecoilReduction": ".5",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
             "id": "fennec-45-wzstats-54BE",
             "cons": [],
             "pros": [],
             "type": "wz2",
             "laser": {
-                "attachmentId": "1mw-quick-fire-laser",
+                "attachmentId": "vlk-lzr-7mw",
                 "verticalTuning": {
                     "value": -0.21
                 },
@@ -1556,7 +1945,7 @@
                     "value": -6.58
                 },
                 "slot": "laser",
-                "name": "1MW Quick Fire Laser"
+                "name": "VLK LZR 7MW"
             },
             "stock": {
                 "attachmentId": "agile-assault-7-stock",
@@ -1605,7 +1994,7 @@
             "createdAt": "2022-12-01T13:21:41.392Z",
             "playstyle": "SHORT_RANGE",
             "tierScore": 995,
-            "updatedAt": "2023-05-02T20:39:36.139Z",
+            "updatedAt": "2023-10-01T15:57:41.922Z",
             "description": "Fast fire rate, great mobility and ADS speed but runs out of ammo fast. ",
             "isPublished": true,
             "displayOrder": 0,
@@ -1614,88 +2003,236 @@
             "adsMovementSpeed": "3.34",
             "interactionCount": null,
             "authorDisplayName": "wzstats",
+            "isWarzoneRankedBuild": true,
             "verticalRecoilReduction": ".95",
             "horizontalRecoilReduction": ".95",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
         {
-            "id": "tempus-razorback-wzstats-bfaaf5",
+            "id": "tempus-razorback-wzstats-9beb21",
             "cons": [],
             "pros": [],
             "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -1.06
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
             "title": "",
             "barrel": {
-                "attachmentId": "16\"-tankr-v",
+                "attachmentId": "18\"-tack-2l",
                 "verticalTuning": {
-                    "value": 0.5
+                    "value": 0.16
                 },
                 "horizontalTuning": {
-                    "value": 0.12
+                    "value": -0.12
                 },
                 "slot": "barrel",
-                "name": "16\" TANKR-V"
+                "name": "18\" Tack-2L"
             },
             "muzzle": {
-                "attachmentId": "harbinger-d20",
+                "attachmentId": "fjx-fulcrum-pro",
                 "verticalTuning": {
-                    "value": 1.4
+                    "value": 0.49
                 },
                 "horizontalTuning": {
-                    "value": -0.19
+                    "value": -0.07
                 },
                 "slot": "muzzle",
-                "name": "Harbinger D20"
+                "name": "FJX Fulcrum Pro"
             },
-            "addedAt": 1687256797.408,
-            "adsTime": "500",
+            "addedAt": 1696254336.612,
+            "adsTime": "410",
             "authorId": "wzstats",
             "magazine": {
-                "attachmentId": "60-round-mag-tidal-recon",
+                "attachmentId": "60-round-mag-kastovia",
                 "verticalTuning": 0,
                 "horizontalTuning": 0,
                 "slot": "magazine",
                 "name": "60 Round Mag"
             },
-            "position": 1,
+            "position": 10,
+            "rearGrip": {
+                "attachmentId": "erg-x1",
+                "verticalTuning": {
+                    "value": 0.29
+                },
+                "horizontalTuning": {
+                    "value": 0.45
+                },
+                "slot": "rearGrip",
+                "name": "ERG-X1"
+            },
             "weaponId": "tempus-razorback",
-            "createdAt": "2023-06-20T10:17:14.244Z",
+            "createdAt": "2023-10-02T13:41:22.638Z",
             "playstyle": "LONG_RANGE",
             "tierScore": 0,
-            "updatedAt": "2023-09-19T15:38:50.884Z",
-            "description": "This Loadout is the perfect balance between recoil control and bullet velocity. It has a fast TTK and it is very easy to use, making it an excellent option for long range.",
+            "updatedAt": "2023-10-02T13:45:36.502Z",
+            "description": "This build focuses on damage range and recoil control. Its perfect for Resurgence.",
             "isPublished": true,
             "underbarrel": {
                 "attachmentId": "dm-proto-grip",
                 "verticalTuning": {
-                    "value": 0.34
+                    "value": 0.39
                 },
                 "horizontalTuning": {
-                    "value": 0.14
+                    "value": 0.4
                 },
                 "slot": "underbarrel",
                 "name": "DM Proto-Grip"
             },
             "displayOrder": 0,
-            "movementSpeed": "6.85",
-            "bulletVelocity": "896",
-            "adsMovementSpeed": "1.85",
+            "isAshikaBuild": true,
+            "movementSpeed": "7.11",
+            "bulletVelocity": "667",
+            "adsMovementSpeed": "2.12",
             "interactionCount": null,
             "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": false,
-            "verticalRecoilReduction": ".79",
-            "horizontalRecoilReduction": ".54",
+            "verticalRecoilReduction": ".75",
+            "horizontalRecoilReduction": ".76",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "iso-9mm-wzstats-655827",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": -0.23
+                },
+                "horizontalTuning": {
+                    "value": -23.03
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "optic": {
+                "attachmentId": "slimline-pro",
+                "verticalTuning": {
+                    "value": -2.03
+                },
+                "horizontalTuning": {
+                    "value": 2.4
+                },
+                "slot": "optic",
+                "name": "Slimline Pro"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "iso-45-factory",
+                "verticalTuning": {
+                    "value": 0.39
+                },
+                "horizontalTuning": {
+                    "value": -0.15
+                },
+                "slot": "barrel",
+                "name": "ISO 45 Factory"
+            },
+            "muzzle": {
+                "attachmentId": "spiral-v3.5-flash-hider",
+                "verticalTuning": {
+                    "value": -0.19
+                },
+                "horizontalTuning": {
+                    "value": 0.25
+                },
+                "slot": "muzzle",
+                "name": "Spiral V3.5 Flash Hider"
+            },
+            "addedAt": 1696236677.008,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "50-round-drum-bruen-ops",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "50 Round Drum"
+            },
+            "position": 10,
+            "weaponId": "iso-9mm",
+            "createdAt": "2023-10-02T08:38:16.201Z",
+            "playstyle": "SNIPER_SUPPORT",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T08:51:17.094Z",
+            "description": "This build has great recoil control. It is build for close to medium range engagements. Best paired with a sniper.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "lockwood-300-wzstats-F806",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "point-g3p-04",
+                "verticalTuning": {
+                    "value": 0.48
+                },
+                "horizontalTuning": {
+                    "value": 51
+                },
+                "slot": "laser",
+                "name": "Point-G3P 04"
+            },
+            "stock": {
+                "attachmentId": "heist-stock-mod",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "stock",
+                "name": "Heist Stock MOD"
+            },
+            "title": "Best Build",
+            "barrel": {
+                "attachmentId": "matuzek-812-barrel",
+                "verticalTuning": {
+                    "value": 0.16
+                },
+                "horizontalTuning": {
+                    "value": 0.4
+                },
+                "slot": "barrel",
+                "name": "Matuzek 812 Barrel"
+            },
+            "muzzle": {
+                "attachmentId": "bryson-series-xii-choke",
+                "verticalTuning": {
+                    "value": 0.13
+                },
+                "horizontalTuning": {
+                    "value": 0.3
+                },
+                "slot": "muzzle",
+                "name": "Bryson Series XII Choke"
+            },
+            "addedAt": 1688038138.01,
+            "authorId": "wzstats",
+            "position": 1,
+            "weaponId": "lockwood-300",
+            "createdAt": "2022-12-05T17:03:55.779Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": 958,
+            "updatedAt": "2023-10-02T14:42:53.892Z",
+            "description": "One Shot Shotgun!",
+            "isPublished": true,
+            "displayOrder": 0,
+            "triggerAction": {
+                "attachmentId": "maelstorm-dual-trigger",
+                "verticalTuning": {
+                    "value": -0.18
+                },
+                "horizontalTuning": {
+                    "value": -0.1
+                },
+                "slot": "triggerAction",
+                "name": "Maelstorm Dual Trigger"
+            },
+            "interactionCount": null,
+            "authorDisplayName": "wzstats",
+            "isWarzoneRankedBuild": true,
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -1850,6 +2387,86 @@
             "externalSourceImage": null
         },
         {
+            "id": "bas-p-wzstats-FA07",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": -0.21
+                },
+                "horizontalTuning": {
+                    "value": -51
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "stock": {
+                "attachmentId": "bruen-flash-v4-stock",
+                "verticalTuning": {
+                    "value": -4
+                },
+                "horizontalTuning": {
+                    "value": -2.4
+                },
+                "slot": "stock",
+                "name": "Bruen Flash v4 Stock"
+            },
+            "title": "Best Build",
+            "muzzle": {
+                "attachmentId": "spiral-v3.5-flash-hider",
+                "verticalTuning": {
+                    "value": -1
+                },
+                "horizontalTuning": {
+                    "value": 0.31
+                },
+                "slot": "muzzle",
+                "name": "Spiral V3.5 Flash Hider"
+            },
+            "addedAt": 1682503513.151,
+            "adsTime": "247",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "50-round-drum-bruen-ops",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "50 Round Drum"
+            },
+            "position": 1,
+            "rearGrip": {
+                "attachmentId": "bruen-flash-grip",
+                "verticalTuning": {
+                    "value": -0.71
+                },
+                "horizontalTuning": {
+                    "value": -0.45
+                },
+                "slot": "rearGrip",
+                "name": "Bruen Flash Grip"
+            },
+            "weaponId": "bas-p",
+            "createdAt": "2022-12-02T11:34:17.655Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": 966,
+            "updatedAt": "2023-09-29T15:34:53.895Z",
+            "description": "Short range BAS-P.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "movementSpeed": "7.58",
+            "bulletVelocity": "540",
+            "adsMovementSpeed": "3.39",
+            "interactionCount": null,
+            "authorDisplayName": "wzstats",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": "0.89",
+            "horizontalRecoilReduction": "0.89",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
             "id": "kastov-74u-wzstats-29ba2f",
             "cons": [],
             "pros": [],
@@ -1929,233 +2546,226 @@
             "externalSourceImage": null
         },
         {
-            "id": "tr-76-geist-wzstats-14bb9e",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -1.65
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "18.5\"-xrk-resonate",
-                "verticalTuning": {
-                    "value": 0.4
-                },
-                "horizontalTuning": {
-                    "value": 0.5
-                },
-                "slot": "barrel",
-                "name": "18.5\" XRK Resonate"
-            },
-            "muzzle": {
-                "attachmentId": "komodo-heavy",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.3
-                },
-                "slot": "muzzle",
-                "name": "Komodo Heavy"
-            },
-            "addedAt": 1695394217.548,
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-kastovia",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 10,
-            "weaponId": "tr-76-geist",
-            "createdAt": "2023-09-22T14:47:35.987Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-22T14:50:18.095Z",
-            "description": "",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "ftac-ripper-56",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.12
-                },
-                "slot": "underbarrel",
-                "name": "FTAC Ripper 56"
-            },
-            "displayOrder": 0,
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": true,
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "taq-56-wzstats-c14ab4",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "stock": {
-                "attachmentId": "tactique-brute-stock",
-                "verticalTuning": {
-                    "value": 1.16
-                },
-                "horizontalTuning": {
-                    "value": 0.85
-                },
-                "slot": "stock",
-                "name": "Tactique Brute Stock"
-            },
-            "title": "",
-            "muzzle": {
-                "attachmentId": "komodo-heavy",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.12
-                },
-                "slot": "muzzle",
-                "name": "Komodo Heavy"
-            },
-            "addedAt": 1695197175.132,
-            "adsTime": "346",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-tactique-verte",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 10,
-            "rearGrip": {
-                "attachmentId": "fss-combat-grip",
-                "verticalTuning": {
-                    "value": 0.42
-                },
-                "horizontalTuning": {
-                    "value": 0.39
-                },
-                "slot": "rearGrip",
-                "name": "FSS Combat Grip"
-            },
-            "weaponId": "taq-56",
-            "createdAt": "2023-09-20T07:56:38.892Z",
-            "playstyle": "LOW_RECOIL",
-            "tierScore": 0,
-            "updatedAt": "2023-09-20T08:06:15.272Z",
-            "description": "This build has the lowest recoil possible for the TAQ-56. It comes at the cost of using the base weapons Bullet Velocity. ",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "ftac-ripper-56",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.4
-                },
-                "slot": "underbarrel",
-                "name": "FTAC Ripper 56"
-            },
-            "displayOrder": 0,
-            "movementSpeed": "7.22",
-            "bulletVelocity": "590",
-            "adsMovementSpeed": "2.22",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "verticalRecoilReduction": ".81",
-            "horizontalRecoilReduction": ".65",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "vaznev-9k-wzstats-79AC",
+            "id": "victus-xmr-wzstats-6DA0",
             "cons": [],
             "pros": [],
             "type": "wz2",
             "laser": {
-                "attachmentId": "fss-ole-v-laser",
+                "attachmentId": "vlk-lzr-7mw",
                 "verticalTuning": {
-                    "value": -0.24
+                    "value": 0.4
                 },
                 "horizontalTuning": {
-                    "value": -23.03
+                    "value": -51
                 },
                 "slot": "laser",
-                "name": "FSS OLE-V laser"
+                "name": "VLK LZR 7MW"
             },
-            "stock": {
-                "attachmentId": "otrezat-stock",
-                "verticalTuning": 0,
-                "horizontalTuning": {
-                    "value": -1.32
+            "optic": {
+                "attachmentId": "forge-tac-delta-4",
+                "verticalTuning": {
+                    "value": -3
                 },
-                "slot": "stock",
-                "name": "Otrezat Stock"
+                "horizontalTuning": {
+                    "value": 0.75
+                },
+                "slot": "optic",
+                "name": "Forge Tac Delta 4"
             },
             "title": "Best Build",
             "barrel": {
-                "attachmentId": "kas-1-381mm",
+                "attachmentId": "mack-8-33.5-super",
                 "verticalTuning": {
                     "value": -0.5
                 },
                 "horizontalTuning": {
-                    "value": -0.21
+                    "value": -0.4
                 },
                 "slot": "barrel",
-                "name": "KAS-1 381MM"
+                "name": "Mack 8 33.5 Super"
             },
-            "addedAt": 1679906562.354,
-            "adsTime": "265",
+            "muzzle": {
+                "attachmentId": "nilsound-90-silencer",
+                "verticalTuning": {
+                    "value": -1.4
+                },
+                "horizontalTuning": {
+                    "value": 1
+                },
+                "slot": "muzzle",
+                "name": "Nilsound 90 Silencer"
+            },
+            "addedAt": 1681317584.978,
+            "adsTime": "609",
+            "authorId": "wzstats",
+            "position": 1,
+            "weaponId": "victus-xmr",
+            "createdAt": "2022-12-02T10:31:59.004Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 971,
+            "updatedAt": "2023-09-13T22:05:46.938Z",
+            "ammunition": {
+                "attachmentId": ".50-cal-explosive",
+                "verticalTuning": {
+                    "value": -0.7
+                },
+                "horizontalTuning": {
+                    "value": 9
+                },
+                "slot": "ammunition",
+                "name": ".50 CAL Explosive"
+            },
+            "description": "Best one shot Victus XMR ",
+            "isPublished": true,
+            "displayOrder": 0,
+            "movementSpeed": "7.02",
+            "bulletVelocity": "525",
+            "adsMovementSpeed": "1.21",
+            "interactionCount": null,
+            "authorDisplayName": "wzstats",
+            "isWarzoneRankedBuild": false,
+            "verticalRecoilReduction": "1",
+            "horizontalRecoilReduction": "1",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "iso-9mm-wzstats-6a5598",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": -0.18
+                },
+                "horizontalTuning": {
+                    "value": -36.19
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "stock": {
+                "attachmentId": "collapsed-stock",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "stock",
+                "name": "Collapsed Stock"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "7\"-ex-raptor-v2",
+                "verticalTuning": {
+                    "value": -0.5
+                },
+                "horizontalTuning": {
+                    "value": 0.4
+                },
+                "slot": "barrel",
+                "name": "7\" EX Raptor-V2"
+            },
+            "muzzle": {
+                "attachmentId": "lacerta-compensator",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.35
+                },
+                "slot": "muzzle",
+                "name": "Lacerta Compensator"
+            },
+            "addedAt": 1696234422.293,
             "authorId": "wzstats",
             "magazine": {
-                "attachmentId": "45-round-mag-kastovia",
+                "attachmentId": "50-round-drum-bruen-ops",
                 "verticalTuning": 0,
                 "horizontalTuning": 0,
                 "slot": "magazine",
-                "name": "45 Round Mag"
+                "name": "50 Round Drum"
             },
-            "position": 1,
+            "position": 10,
+            "weaponId": "iso-9mm",
+            "createdAt": "2023-10-02T08:06:04.920Z",
+            "playstyle": "MOBILITY",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T08:13:42.493Z",
+            "description": "This build prioritizes high mobility and fast ADS strafing speeds at the cost of some recoil control. Its still fairly accurate. Perfect for small map resurgence.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "isAshikaBuild": true,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "lachmann-shroud-wzstats-6ea853",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": -0.16
+                },
+                "horizontalTuning": {
+                    "value": -26.32
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "stock": {
+                "attachmentId": "lm-stockless-mod",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "stock",
+                "name": "LM Stockless MOD"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "114mm-darkstar",
+                "verticalTuning": {
+                    "value": -0.1
+                },
+                "horizontalTuning": {
+                    "value": 0.15
+                },
+                "slot": "barrel",
+                "name": "114mm Darkstar"
+            },
+            "addedAt": 1693581214.724,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "40-round-mag-tactique-verte",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "40 Round Mag"
+            },
+            "position": 10,
             "rearGrip": {
-                "attachmentId": "true-tac-grip",
+                "attachmentId": "lachmann-tcg-10",
                 "verticalTuning": {
                     "value": -0.19
                 },
                 "horizontalTuning": {
-                    "value": -0.12
+                    "value": -0.45
                 },
                 "slot": "rearGrip",
-                "name": "True-TAC Grip"
+                "name": "Lachmann TCG-10"
             },
-            "weaponId": "vaznev-9k",
-            "createdAt": "2022-12-01T13:21:41.392Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": 996,
-            "updatedAt": "2023-09-14T23:11:07.374Z",
-            "description": "This Vaznev-9K is balanced for mobility & recoil control. The barrel increases the Damage Range and makes it deadly for a longer distance.",
+            "weaponId": "lachmann-shroud",
+            "createdAt": "2023-09-01T15:04:12.012Z",
+            "playstyle": "MOBILITY",
+            "tierScore": 0,
+            "updatedAt": "2023-09-14T23:22:48.704Z",
+            "description": "This build has the highest mobility for the Lachmann Shroud at the cost of some range. Perfect for fast paced combat on small maps",
             "isPublished": true,
             "displayOrder": 0,
-            "movementSpeed": "7.56",
-            "bulletVelocity": "608",
-            "adsMovementSpeed": "3.5",
-            "interactionCount": 1736,
-            "authorDisplayName": "wzstats",
-            "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": "1.06",
-            "horizontalRecoilReduction": "1.06",
+            "isAshikaBuild": true,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -2954,85 +3564,6 @@
             "externalSourceImage": null
         },
         {
-            "id": "m13b-wzstats-b28b4f",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -1.65
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "14\"-bruen-echelon",
-                "verticalTuning": {
-                    "value": 0.5
-                },
-                "horizontalTuning": {
-                    "value": -0.1
-                },
-                "slot": "barrel",
-                "name": "14\" Bruen Echelon"
-            },
-            "muzzle": {
-                "attachmentId": "harbinger-d20",
-                "verticalTuning": {
-                    "value": 0.54
-                },
-                "horizontalTuning": {
-                    "value": 0.58
-                },
-                "slot": "muzzle",
-                "name": "Harbinger D20"
-            },
-            "addedAt": 1684262329.232,
-            "adsTime": "517",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-bruen-ops",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 2,
-            "weaponId": "m13b",
-            "createdAt": "2023-05-16T18:31:44.880Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-14T23:08:24.937Z",
-            "description": "This build uses a suppressor at the cost of slow ADS speed, reduced mobility, and less recoil control.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "ftac-ripper-56",
-                "verticalTuning": {
-                    "value": 0.54
-                },
-                "horizontalTuning": {
-                    "value": 0.4
-                },
-                "slot": "underbarrel",
-                "name": "FTAC Ripper 56"
-            },
-            "displayOrder": 0,
-            "movementSpeed": "7.1",
-            "bulletVelocity": "794",
-            "adsMovementSpeed": "2.17",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "verticalRecoilReduction": ".86",
-            "horizontalRecoilReduction": ".86",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
             "id": "sakin-mg38-wzstats-799a43",
             "cons": [],
             "pros": [],
@@ -3430,86 +3961,6 @@
             "authorDisplayName": "WZStats",
             "verticalRecoilReduction": ".86",
             "horizontalRecoilReduction": ".86",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "m13b-wzstats-78E1",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -1.94
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
-            "title": "Best Build",
-            "barrel": {
-                "attachmentId": "14\"-bruen-echelon",
-                "verticalTuning": {
-                    "value": 0.45
-                },
-                "horizontalTuning": {
-                    "value": -0.13
-                },
-                "slot": "barrel",
-                "name": "14\" Bruen Echelon"
-            },
-            "muzzle": {
-                "attachmentId": "komodo-heavy",
-                "verticalTuning": {
-                    "value": 0.39
-                },
-                "horizontalTuning": {
-                    "value": 0.16
-                },
-                "slot": "muzzle",
-                "name": "Komodo Heavy"
-            },
-            "addedAt": 1681817919.056,
-            "adsTime": "449",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-bruen-ops",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 1,
-            "weaponId": "m13b",
-            "createdAt": "2022-12-01T13:21:41.392Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 992,
-            "updatedAt": "2023-09-11T11:45:35.618Z",
-            "ammunition": {
-                "attachmentId": "5.56-high-velocity",
-                "verticalTuning": {
-                    "value": -0.45
-                },
-                "horizontalTuning": {
-                    "value": -3.48
-                },
-                "slot": "ammunition",
-                "name": "5.56 High Velocity"
-            },
-            "description": "This build focuses on recoil control and ease of use at long range.",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "7.1",
-            "bulletVelocity": "611",
-            "adsMovementSpeed": "2.26",
-            "interactionCount": null,
-            "authorDisplayName": "wzstats",
-            "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": ".83",
-            "horizontalRecoilReduction": ".65",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -5582,87 +6033,6 @@
             "externalSourceImage": null
         },
         {
-            "id": "lachmann-sub-wzstats-24d689",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.15
-                },
-                "horizontalTuning": {
-                    "value": -21.39
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "l38-falcon-226mm",
-                "verticalTuning": {
-                    "value": -0.5
-                },
-                "horizontalTuning": {
-                    "value": 0.23
-                },
-                "slot": "barrel",
-                "name": "L38 Falcon 226MM"
-            },
-            "muzzle": {
-                "attachmentId": "xten-rr-40",
-                "verticalTuning": {
-                    "value": -0.36
-                },
-                "horizontalTuning": {
-                    "value": 0.29
-                },
-                "slot": "muzzle",
-                "name": "XTEN RR-40"
-            },
-            "addedAt": 1691502773.038,
-            "adsTime": "261",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "40-round-mag-lachmann-meer",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "40 Round Mag"
-            },
-            "position": 10,
-            "prosCons": "pro",
-            "rearGrip": {
-                "attachmentId": "lachmann-tcg-10",
-                "verticalTuning": {
-                    "value": -0.35
-                },
-                "horizontalTuning": {
-                    "value": -0.1
-                },
-                "slot": "rearGrip",
-                "name": "Lachmann TCG-10"
-            },
-            "weaponId": "lachmann-sub",
-            "createdAt": "2023-08-08T13:47:44.349Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-08-15T18:20:47.573Z",
-            "description": "This build uses a suppressor to increase the damage range and bullet velocity to make the Lachmann Sub more effective at longer distances. ",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "7.62",
-            "bulletVelocity": "673",
-            "adsMovementSpeed": "3.3",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": false,
-            "verticalRecoilReduction": "1",
-            "horizontalRecoilReduction": "1",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
             "id": "stb-556-wzstats-935b44",
             "cons": [],
             "pros": [],
@@ -5738,85 +6108,6 @@
             "authorDisplayName": "WZStats",
             "verticalRecoilReduction": ".75",
             "horizontalRecoilReduction": ".64",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "lachmann-sub-wzstats-a79f3a",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.18
-                },
-                "horizontalTuning": {
-                    "value": -34.55
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "title": "",
-            "muzzle": {
-                "attachmentId": "lacerta-compensator",
-                "verticalTuning": {
-                    "value": -0.18
-                },
-                "horizontalTuning": {
-                    "value": 0.12
-                },
-                "slot": "muzzle",
-                "name": "Lacerta Compensator"
-            },
-            "addedAt": 1685045077.336,
-            "adsTime": "268",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "40-round-mag-lachmann-meer",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "40 Round Mag"
-            },
-            "position": 5,
-            "rearGrip": {
-                "attachmentId": "lachmann-tcg-10",
-                "verticalTuning": {
-                    "value": -0.19
-                },
-                "horizontalTuning": {
-                    "value": 0.23
-                },
-                "slot": "rearGrip",
-                "name": "Lachmann TCG-10"
-            },
-            "weaponId": "lachmann-sub",
-            "createdAt": "2023-03-27T07:17:33.900Z",
-            "playstyle": "LOW_RECOIL",
-            "tierScore": 0,
-            "updatedAt": "2023-08-23T23:46:04.015Z",
-            "description": "This build prioritizes recoil control and ease of use at the cost of mobility.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "lockgrip-precision-40",
-                "verticalTuning": {
-                    "value": 0.39
-                },
-                "horizontalTuning": {
-                    "value": 0.19
-                },
-                "slot": "underbarrel",
-                "name": "Lockgrip Precision-40"
-            },
-            "displayOrder": 0,
-            "movementSpeed": "7.56",
-            "bulletVelocity": "540",
-            "adsMovementSpeed": "3.21",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "verticalRecoilReduction": ".79",
-            "horizontalRecoilReduction": ".62",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -5900,75 +6191,155 @@
             "externalSourceImage": null
         },
         {
-            "id": "lockwood-300-wzstats-F806",
+            "id": "tr-76-geist-wzstats-14c856",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -1.65
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "bruen-bridle-60",
+                "verticalTuning": {
+                    "value": 0.22
+                },
+                "horizontalTuning": {
+                    "value": 0.18
+                },
+                "slot": "barrel",
+                "name": "Bruen Bridle 60"
+            },
+            "muzzle": {
+                "attachmentId": "zlr-talon-5",
+                "verticalTuning": {
+                    "value": 1.4
+                },
+                "horizontalTuning": {
+                    "value": -0.34
+                },
+                "slot": "muzzle",
+                "name": "ZLR Talon 5"
+            },
+            "addedAt": 1695853027.432,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "45-round-mag-iso",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "45 Round Mag"
+            },
+            "position": 10,
+            "weaponId": "tr-76-geist",
+            "createdAt": "2023-09-22T14:46:07.881Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-27T22:17:07.748Z",
+            "description": "",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 8
+                },
+                "horizontalTuning": {
+                    "value": 0.25
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "iso-45-wzstats-534003",
             "cons": [],
             "pros": [],
             "type": "wz2",
             "laser": {
-                "attachmentId": "point-g3p-04",
+                "attachmentId": "vlk-lzr-7mw",
                 "verticalTuning": {
-                    "value": 0.48
+                    "value": -0.29
                 },
                 "horizontalTuning": {
-                    "value": 51
+                    "value": -24.68
                 },
                 "slot": "laser",
-                "name": "Point-G3P 04"
+                "name": "VLK LZR 7MW"
             },
             "stock": {
-                "attachmentId": "heist-stock-mod",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "stock",
-                "name": "Heist Stock MOD"
-            },
-            "title": "Best Build",
-            "barrel": {
-                "attachmentId": "matuzek-812-barrel",
+                "attachmentId": "demo-fade-tac",
                 "verticalTuning": {
-                    "value": 0.16
+                    "value": -4
                 },
                 "horizontalTuning": {
+                    "value": -1.47
+                },
+                "slot": "stock",
+                "name": "Demo Fade Tac"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "7\"-ex-raptor-v2",
+                "verticalTuning": {
                     "value": 0.4
+                },
+                "horizontalTuning": {
+                    "value": 0.22
                 },
                 "slot": "barrel",
-                "name": "Matuzek 812 Barrel"
+                "name": "7\" EX Raptor-V2"
             },
             "muzzle": {
-                "attachmentId": "bryson-series-xii-choke",
+                "attachmentId": "spiral-v3.5-flash-hider",
                 "verticalTuning": {
-                    "value": 0.13
-                },
-                "horizontalTuning": {
-                    "value": 0.3
-                },
-                "slot": "muzzle",
-                "name": "Bryson Series XII Choke"
-            },
-            "addedAt": 1688038138.01,
-            "authorId": "wzstats",
-            "position": 1,
-            "weaponId": "lockwood-300",
-            "createdAt": "2022-12-05T17:03:55.779Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": 958,
-            "updatedAt": "2023-06-29T11:28:58.830Z",
-            "description": "",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "vx-pineapple",
-                "verticalTuning": {
-                    "value": 0.8
+                    "value": -0.19
                 },
                 "horizontalTuning": {
                     "value": 0.4
                 },
-                "slot": "underbarrel",
-                "name": "VX Pineapple"
+                "slot": "muzzle",
+                "name": "Spiral V3.5 Flash Hider"
             },
+            "addedAt": 1686766231.443,
+            "adsTime": "222",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "45-round-drum-iso",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "45 Round Drum"
+            },
+            "position": 1,
+            "weaponId": "iso-45",
+            "createdAt": "2023-06-14T14:57:52.570Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-14T23:10:52.816Z",
+            "description": "This build has great mobility and handling while still remaining easy to control.",
+            "isPublished": true,
             "displayOrder": 0,
+            "movementSpeed": "7.56",
+            "bulletVelocity": "510",
+            "adsMovementSpeed": "3.52",
             "interactionCount": null,
-            "authorDisplayName": "wzstats",
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": ".92",
+            "horizontalRecoilReduction": ".92",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -6279,86 +6650,6 @@
             "displayOrder": 0,
             "interactionCount": null,
             "authorDisplayName": "wzstats",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "m4-wzstats-41241a",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -1.65
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "hightower-20\"-barrel",
-                "verticalTuning": {
-                    "value": 0.18
-                },
-                "horizontalTuning": {
-                    "value": 0.4
-                },
-                "slot": "barrel",
-                "name": "Hightower 20\" Barrel"
-            },
-            "muzzle": {
-                "attachmentId": "komodo-heavy",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.35
-                },
-                "slot": "muzzle",
-                "name": "Komodo Heavy"
-            },
-            "addedAt": 1681816214.431,
-            "adsTime": "460",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-m4",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 1,
-            "weaponId": "m4",
-            "createdAt": "2023-04-18T11:00:06.612Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-14T23:23:02.256Z",
-            "description": "This build focuses on recoil control for ease of use at long ranges.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "ftac-ripper-56",
-                "verticalTuning": {
-                    "value": 0.26
-                },
-                "horizontalTuning": {
-                    "value": -0.4
-                },
-                "slot": "underbarrel",
-                "name": "FTAC Ripper 56"
-            },
-            "displayOrder": 0,
-            "movementSpeed": "7.16",
-            "bulletVelocity": "720",
-            "adsMovementSpeed": "2.27",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": ".81",
-            "horizontalRecoilReduction": ".61",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -7979,6 +8270,79 @@
             "externalSourceImage": null
         },
         {
+            "id": "bas-p-wzstats-085180",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": 0.16
+                },
+                "horizontalTuning": {
+                    "value": 51
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "optic": {
+                "attachmentId": "slimline-pro",
+                "verticalTuning": {
+                    "value": -0.87
+                },
+                "horizontalTuning": {
+                    "value": 2.4
+                },
+                "slot": "optic",
+                "name": "Slimline Pro"
+            },
+            "title": "",
+            "muzzle": {
+                "attachmentId": "lacerta-compensator",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.11
+                },
+                "slot": "muzzle",
+                "name": "Lacerta Compensator"
+            },
+            "addedAt": 1696242756.012,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "50-round-drum-bruen-ops",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "50 Round Drum"
+            },
+            "position": 2,
+            "weaponId": "bas-p",
+            "createdAt": "2023-09-15T07:59:55.171Z",
+            "playstyle": "SNIPER_SUPPORT",
+            "tierScore": 0,
+            "updatedAt": "2023-10-02T10:32:36.059Z",
+            "description": "This build focuses on recoil control and ease of use at close to medium range combat. It is best paired with a sniper.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "lockgrip-precision-40",
+                "verticalTuning": {
+                    "value": -0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.22
+                },
+                "slot": "underbarrel",
+                "name": "Lockgrip Precision-40"
+            },
+            "displayOrder": 0,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
             "id": "raal-mg-wzstats-3330",
             "cons": [],
             "pros": [],
@@ -8666,85 +9030,6 @@
             "externalSourceImage": null
         },
         {
-            "id": "bas-p-wzstats-FA07",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.21
-                },
-                "horizontalTuning": {
-                    "value": -51
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "stock": {
-                "attachmentId": "bruen-flash-v4-stock",
-                "verticalTuning": {
-                    "value": -4
-                },
-                "horizontalTuning": {
-                    "value": -2.4
-                },
-                "slot": "stock",
-                "name": "Bruen Flash v4 Stock"
-            },
-            "title": "Best Build",
-            "muzzle": {
-                "attachmentId": "spiral-v3.5-flash-hider",
-                "verticalTuning": {
-                    "value": -1
-                },
-                "horizontalTuning": {
-                    "value": 0.31
-                },
-                "slot": "muzzle",
-                "name": "Spiral V3.5 Flash Hider"
-            },
-            "addedAt": 1682503513.151,
-            "adsTime": "247",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "50-round-drum-bruen-ops",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "50 Round Drum"
-            },
-            "position": 1,
-            "rearGrip": {
-                "attachmentId": "d37-grip",
-                "verticalTuning": {
-                    "value": -0.55
-                },
-                "horizontalTuning": {
-                    "value": -0.45
-                },
-                "slot": "rearGrip",
-                "name": "D37 Grip"
-            },
-            "weaponId": "bas-p",
-            "createdAt": "2022-12-02T11:34:17.655Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": 966,
-            "updatedAt": "2023-09-14T23:22:12.102Z",
-            "description": "Short range BAS-P.",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "7.58",
-            "bulletVelocity": "540",
-            "adsMovementSpeed": "3.39",
-            "interactionCount": null,
-            "authorDisplayName": "wzstats",
-            "verticalRecoilReduction": "0.89",
-            "horizontalRecoilReduction": "0.89",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
             "id": "victus-xmr-wzstats-52bec2",
             "cons": [],
             "pros": [],
@@ -9058,86 +9343,6 @@
             "externalSourceImage": null
         },
         {
-            "id": "iso-45-wzstats-534003",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.29
-                },
-                "horizontalTuning": {
-                    "value": -24.68
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "stock": {
-                "attachmentId": "demo-fade-tac",
-                "verticalTuning": {
-                    "value": -4
-                },
-                "horizontalTuning": {
-                    "value": -1.47
-                },
-                "slot": "stock",
-                "name": "Demo Fade Tac"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "7\"-ex-raptor-v2",
-                "verticalTuning": {
-                    "value": 0.4
-                },
-                "horizontalTuning": {
-                    "value": 0.22
-                },
-                "slot": "barrel",
-                "name": "7\" EX Raptor-V2"
-            },
-            "muzzle": {
-                "attachmentId": "spiral-v3.5-flash-hider",
-                "verticalTuning": {
-                    "value": -0.19
-                },
-                "horizontalTuning": {
-                    "value": 0.4
-                },
-                "slot": "muzzle",
-                "name": "Spiral V3.5 Flash Hider"
-            },
-            "addedAt": 1686766231.443,
-            "adsTime": "222",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "45-round-drum-iso",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "45 Round Drum"
-            },
-            "position": 1,
-            "weaponId": "iso-45",
-            "createdAt": "2023-06-14T14:57:52.570Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-14T23:10:52.816Z",
-            "description": "This build has great mobility and handling while still remaining easy to control.",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "7.56",
-            "bulletVelocity": "510",
-            "adsMovementSpeed": "3.52",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": ".92",
-            "horizontalRecoilReduction": ".92",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
             "id": "sp-x-80-wzstats-500A",
             "cons": [],
             "pros": [],
@@ -9294,6 +9499,86 @@
             "externalSourceImage": null
         },
         {
+            "id": "vel-46-wzstats-e5b55c",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": -0.19
+                },
+                "horizontalTuning": {
+                    "value": -32.9
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "stock": {
+                "attachmentId": "demo-rxt-stock",
+                "verticalTuning": {
+                    "value": -1.42
+                },
+                "horizontalTuning": {
+                    "value": 1.08
+                },
+                "slot": "stock",
+                "name": "Demo RXT Stock"
+            },
+            "title": "",
+            "addedAt": 1681333527.547,
+            "adsTime": "194",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "50-round-mag-lmp",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "50 Round Mag"
+            },
+            "position": 1,
+            "rearGrip": {
+                "attachmentId": "zlr-combat-grip",
+                "verticalTuning": {
+                    "value": -0.45
+                },
+                "horizontalTuning": {
+                    "value": -0.45
+                },
+                "slot": "rearGrip",
+                "name": "ZLR Combat Grip"
+            },
+            "weaponId": "vel-46",
+            "createdAt": "2023-04-12T21:02:49.767Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-12T12:24:28.886Z",
+            "ammunition": {
+                "attachmentId": "4.6mm-hollowpoint",
+                "verticalTuning": {
+                    "value": 0.5
+                },
+                "horizontalTuning": {
+                    "value": -5.52
+                },
+                "slot": "ammunition",
+                "name": "4.6MM Hollowpoint"
+            },
+            "description": "Great SMG for Close Range. Fast TTK, Low Recoil, & Great Mobility.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "movementSpeed": "7.93",
+            "bulletVelocity": "540",
+            "adsMovementSpeed": "3.3",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": ".98",
+            "horizontalRecoilReduction": ".98",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
             "id": "sa-b-50-wzstats-2497",
             "bolt": {
                 "attachmentId": "fss-st87-bolt",
@@ -9363,85 +9648,6 @@
             "displayOrder": 0,
             "interactionCount": null,
             "authorDisplayName": "wzstats",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "kastov-762-wzstats-db15c1",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "aim-op-v4",
-                "verticalTuning": {
-                    "value": -2.13
-                },
-                "horizontalTuning": {
-                    "value": -1.65
-                },
-                "slot": "optic",
-                "name": "Aim OP-V4"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "ig-k30-406mm",
-                "verticalTuning": {
-                    "value": 0.21
-                },
-                "horizontalTuning": {
-                    "value": -0.22
-                },
-                "slot": "barrel",
-                "name": "IG-K30 406mm"
-            },
-            "muzzle": {
-                "attachmentId": "zlr-talon-5",
-                "verticalTuning": {
-                    "value": 1.4
-                },
-                "horizontalTuning": {
-                    "value": -0.32
-                },
-                "slot": "muzzle",
-                "name": "ZLR Talon 5"
-            },
-            "addedAt": 1682679645.705,
-            "adsTime": "482",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "40-round-mag-kastovia",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "40 Round Mag"
-            },
-            "position": 2,
-            "weaponId": "kastov-762",
-            "createdAt": "2023-03-27T09:35:56.904Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-14T23:09:04.553Z",
-            "description": "This build uses a suppressor to slightly increase bullet velocity and damage range at the cost of some recoil control and slower ADS speed.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "ftac-ripper-56",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": -0.21
-                },
-                "slot": "underbarrel",
-                "name": "FTAC Ripper 56"
-            },
-            "displayOrder": 0,
-            "movementSpeed": "7.23",
-            "bulletVelocity": "864",
-            "adsMovementSpeed": "2.11",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "verticalRecoilReduction": ".83",
-            "horizontalRecoilReduction": ".83",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -9672,80 +9878,6 @@
             "displayOrder": 0,
             "interactionCount": null,
             "authorDisplayName": "WZStats",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "fr-avancer-wzstats-0a0cc2",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.4
-                },
-                "horizontalTuning": {
-                    "value": -13.16
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "stock": {
-                "attachmentId": "fr-sprinter",
-                "verticalTuning": {
-                    "value": -1.29
-                },
-                "horizontalTuning": {
-                    "value": -1.08
-                },
-                "slot": "stock",
-                "name": "FR Sprinter"
-            },
-            "title": "",
-            "muzzle": {
-                "attachmentId": "corvus-slash-gen.-2",
-                "verticalTuning": {
-                    "value": 0.74
-                },
-                "horizontalTuning": {
-                    "value": 0.22
-                },
-                "slot": "muzzle",
-                "name": "Corvus Slash Gen. 2"
-            },
-            "addedAt": 1691004532.069,
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-m4",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 2,
-            "rearGrip": {
-                "attachmentId": "sa-ion",
-                "verticalTuning": {
-                    "value": 0.32
-                },
-                "horizontalTuning": {
-                    "value": -0.1
-                },
-                "slot": "rearGrip",
-                "name": "SA ION"
-            },
-            "weaponId": "fr-avancer",
-            "createdAt": "2023-08-02T19:24:58.971Z",
-            "playstyle": "SNIPER_SUPPORT",
-            "tierScore": 0,
-            "updatedAt": "2023-09-08T15:20:35.280Z",
-            "description": "Amazing sniper support which is build for close to medium range combat.",
-            "isPublished": true,
-            "displayOrder": 0,
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": false,
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -10440,6 +10572,80 @@
             "externalSourceImage": null
         },
         {
+            "id": "fr-avancer-wzstats-0a0cc2",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": -0.4
+                },
+                "horizontalTuning": {
+                    "value": -13.16
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "stock": {
+                "attachmentId": "fr-sprinter",
+                "verticalTuning": {
+                    "value": -1.29
+                },
+                "horizontalTuning": {
+                    "value": -1.08
+                },
+                "slot": "stock",
+                "name": "FR Sprinter"
+            },
+            "title": "",
+            "muzzle": {
+                "attachmentId": "corvus-slash-gen.-2",
+                "verticalTuning": {
+                    "value": 0.74
+                },
+                "horizontalTuning": {
+                    "value": 0.22
+                },
+                "slot": "muzzle",
+                "name": "Corvus Slash Gen. 2"
+            },
+            "addedAt": 1691004532.069,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-m4",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 2,
+            "rearGrip": {
+                "attachmentId": "sa-ion",
+                "verticalTuning": {
+                    "value": 0.32
+                },
+                "horizontalTuning": {
+                    "value": -0.1
+                },
+                "slot": "rearGrip",
+                "name": "SA ION"
+            },
+            "weaponId": "fr-avancer",
+            "createdAt": "2023-08-02T19:24:58.971Z",
+            "playstyle": "SNIPER_SUPPORT",
+            "tierScore": 0,
+            "updatedAt": "2023-09-08T15:20:35.280Z",
+            "description": "Amazing sniper support which is build for close to medium range combat.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": false,
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
             "id": "taq-v-wzstats-1268",
             "cons": [],
             "pros": [],
@@ -10597,90 +10803,6 @@
             "authorDisplayName": "WZStats",
             "verticalRecoilReduction": ".74",
             "horizontalRecoilReduction": ".58",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "victus-xmr-wzstats-6DA0",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": 0.4
-                },
-                "horizontalTuning": {
-                    "value": -51
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "optic": {
-                "attachmentId": "forge-tac-delta-4",
-                "verticalTuning": {
-                    "value": -3
-                },
-                "horizontalTuning": {
-                    "value": 0.75
-                },
-                "slot": "optic",
-                "name": "Forge Tac Delta 4"
-            },
-            "title": "Best Build",
-            "barrel": {
-                "attachmentId": "mack-8-33.5-super",
-                "verticalTuning": {
-                    "value": -0.5
-                },
-                "horizontalTuning": {
-                    "value": -0.4
-                },
-                "slot": "barrel",
-                "name": "Mack 8 33.5 Super"
-            },
-            "muzzle": {
-                "attachmentId": "nilsound-90-silencer",
-                "verticalTuning": {
-                    "value": -1.4
-                },
-                "horizontalTuning": {
-                    "value": 1
-                },
-                "slot": "muzzle",
-                "name": "Nilsound 90 Silencer"
-            },
-            "addedAt": 1681317584.978,
-            "adsTime": "609",
-            "authorId": "wzstats",
-            "position": 1,
-            "weaponId": "victus-xmr",
-            "createdAt": "2022-12-02T10:31:59.004Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 971,
-            "updatedAt": "2023-09-13T22:05:46.938Z",
-            "ammunition": {
-                "attachmentId": ".50-cal-explosive",
-                "verticalTuning": {
-                    "value": -0.7
-                },
-                "horizontalTuning": {
-                    "value": 9
-                },
-                "slot": "ammunition",
-                "name": ".50 CAL Explosive"
-            },
-            "description": "Best one shot Victus XMR ",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "7.02",
-            "bulletVelocity": "525",
-            "adsMovementSpeed": "1.21",
-            "interactionCount": null,
-            "authorDisplayName": "wzstats",
-            "isWarzoneRankedBuild": false,
-            "verticalRecoilReduction": "1",
-            "horizontalRecoilReduction": "1",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -10929,86 +11051,6 @@
             "authorDisplayName": "WZStats",
             "verticalRecoilReduction": ".77",
             "horizontalRecoilReduction": ".73",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "vel-46-wzstats-e5b55c",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.19
-                },
-                "horizontalTuning": {
-                    "value": -32.9
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "stock": {
-                "attachmentId": "demo-rxt-stock",
-                "verticalTuning": {
-                    "value": -1.42
-                },
-                "horizontalTuning": {
-                    "value": 1.08
-                },
-                "slot": "stock",
-                "name": "Demo RXT Stock"
-            },
-            "title": "",
-            "addedAt": 1681333527.547,
-            "adsTime": "194",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "50-round-mag-lmp",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "50 Round Mag"
-            },
-            "position": 1,
-            "rearGrip": {
-                "attachmentId": "zlr-combat-grip",
-                "verticalTuning": {
-                    "value": -0.45
-                },
-                "horizontalTuning": {
-                    "value": -0.45
-                },
-                "slot": "rearGrip",
-                "name": "ZLR Combat Grip"
-            },
-            "weaponId": "vel-46",
-            "createdAt": "2023-04-12T21:02:49.767Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-12T12:24:28.886Z",
-            "ammunition": {
-                "attachmentId": "4.6mm-hollowpoint",
-                "verticalTuning": {
-                    "value": 0.5
-                },
-                "horizontalTuning": {
-                    "value": -5.52
-                },
-                "slot": "ammunition",
-                "name": "4.6MM Hollowpoint"
-            },
-            "description": "Great SMG for Close Range. Fast TTK, Low Recoil, & Great Mobility.",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "7.93",
-            "bulletVelocity": "540",
-            "adsMovementSpeed": "3.3",
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": ".98",
-            "horizontalRecoilReduction": ".98",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -11405,76 +11447,6 @@
             "externalSourceImage": null
         },
         {
-            "id": "lachmann-shroud-wzstats-6ea853",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.16
-                },
-                "horizontalTuning": {
-                    "value": -26.32
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "stock": {
-                "attachmentId": "lm-stockless-mod",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "stock",
-                "name": "LM Stockless MOD"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "114mm-darkstar",
-                "verticalTuning": {
-                    "value": -0.1
-                },
-                "horizontalTuning": {
-                    "value": 0.15
-                },
-                "slot": "barrel",
-                "name": "114mm Darkstar"
-            },
-            "addedAt": 1693581214.724,
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "40-round-mag-tactique-verte",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "40 Round Mag"
-            },
-            "position": 10,
-            "rearGrip": {
-                "attachmentId": "lachmann-tcg-10",
-                "verticalTuning": {
-                    "value": -0.19
-                },
-                "horizontalTuning": {
-                    "value": -0.45
-                },
-                "slot": "rearGrip",
-                "name": "Lachmann TCG-10"
-            },
-            "weaponId": "lachmann-shroud",
-            "createdAt": "2023-09-01T15:04:12.012Z",
-            "playstyle": "MOBILITY",
-            "tierScore": 0,
-            "updatedAt": "2023-09-14T23:22:48.704Z",
-            "description": "This build has the highest mobility for the Lachmann Shroud at the cost of some range. Perfect for fast paced combat on small maps",
-            "isPublished": true,
-            "displayOrder": 0,
-            "isAshikaBuild": true,
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
             "id": "rapp-h-wzstats-883c96",
             "cons": [],
             "pros": [],
@@ -11554,75 +11526,6 @@
             "authorDisplayName": "WZStats",
             "verticalRecoilReduction": ".76",
             "horizontalRecoilReduction": ".61",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "vel-46-wzstats-dc282b",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "point-g3p-04",
-                "verticalTuning": {
-                    "value": -0.48
-                },
-                "horizontalTuning": {
-                    "value": 51
-                },
-                "slot": "laser",
-                "name": "Point-G3P 04"
-            },
-            "stock": {
-                "attachmentId": "vel-a-568-collapsed",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "stock",
-                "name": "VEL A-568 Collapsed"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "lm-series-7",
-                "verticalTuning": {
-                    "value": 0.000001
-                },
-                "horizontalTuning": {
-                    "value": 0.21
-                },
-                "slot": "barrel",
-                "name": "LM Series-7"
-            },
-            "addedAt": 1694731923.881,
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "60-round-mag-lmp",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "60 Round Mag"
-            },
-            "position": 10,
-            "weaponId": "vel-46",
-            "createdAt": "2023-09-14T22:50:23.152Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-14T22:52:05.206Z",
-            "description": "The best Hip Fire build for the Vel 46.",
-            "isPublished": true,
-            "underbarrel": {
-                "attachmentId": "vx-pineapple",
-                "verticalTuning": {
-                    "value": 0.8
-                },
-                "horizontalTuning": {
-                    "value": 0.25
-                },
-                "slot": "underbarrel",
-                "name": "VX Pineapple"
-            },
-            "displayOrder": 0,
-            "interactionCount": null,
-            "authorDisplayName": "WZStats",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -11860,93 +11763,6 @@
             "externalSourceImage": null
         },
         {
-            "id": "lachmann-sub-WZStats-51N7",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "laser": {
-                "attachmentId": "vlk-lzr-7mw",
-                "verticalTuning": {
-                    "value": -0.18
-                },
-                "horizontalTuning": {
-                    "value": -34.55
-                },
-                "slot": "laser",
-                "name": "VLK LZR 7MW"
-            },
-            "stock": {
-                "attachmentId": "ft-mobile-stock",
-                "verticalTuning": {
-                    "value": -4
-                },
-                "horizontalTuning": {
-                    "value": -2.4
-                },
-                "slot": "stock",
-                "name": "FT Mobile Stock"
-            },
-            "title": "",
-            "barrel": {
-                "attachmentId": "l38-falcon-226mm",
-                "verticalTuning": {
-                    "value": -0.34
-                },
-                "horizontalTuning": {
-                    "value": 0.25
-                },
-                "slot": "barrel",
-                "name": "L38 Falcon 226MM"
-            },
-            "addedAt": 1682428580.169,
-            "adsTime": "193",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "40-round-mag-lachmann-meer",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "40 Round Mag"
-            },
-            "position": 1,
-            "prosCons": "",
-            "weaponId": "lachmann-sub",
-            "createdAt": "2023-03-01T20:52:33.815Z",
-            "playstyle": "SHORT_RANGE",
-            "tierScore": null,
-            "twitterId": "1637200610461118466?s=20",
-            "updatedAt": "2023-09-14T23:10:32.652Z",
-            "ammunition": {
-                "attachmentId": "9mm-hollow-point",
-                "verticalTuning": {
-                    "value": 0.5
-                },
-                "horizontalTuning": {
-                    "value": -5.52
-                },
-                "slot": "ammunition",
-                "name": "9MM Hollow Point"
-            },
-            "externalId": "1637200610461118466?s=20",
-            "description": "This Lachmann Sub is the perfect balanced for mobility & recoil control.",
-            "externalUrl": "https://twitter.com/WZStatsGG/status/1630977085870047252",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "7.62",
-            "bulletVelocity": "517",
-            "externalSource": "twitter",
-            "adsMovementSpeed": "3.3",
-            "interactionCount": 1525,
-            "authorDisplayName": "WZStats",
-            "externalSourceImage": null,
-            "externalSourceTitle": null,
-            "highlightDescription": "THE BEST SMG",
-            "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": "1",
-            "horizontalRecoilReduction": "1",
-            "shortHighlightDescription": "THE BEST SMG"
-        },
-        {
             "id": "kastov-762-wzstats-01fff0",
             "cons": [],
             "pros": [],
@@ -12106,6 +11922,85 @@
             "externalSourceImage": null
         },
         {
+            "id": "kastov-762-wzstats-db15c1",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -2.13
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "ig-k30-406mm",
+                "verticalTuning": {
+                    "value": 0.21
+                },
+                "horizontalTuning": {
+                    "value": -0.22
+                },
+                "slot": "barrel",
+                "name": "IG-K30 406mm"
+            },
+            "muzzle": {
+                "attachmentId": "zlr-talon-5",
+                "verticalTuning": {
+                    "value": 1.4
+                },
+                "horizontalTuning": {
+                    "value": -0.32
+                },
+                "slot": "muzzle",
+                "name": "ZLR Talon 5"
+            },
+            "addedAt": 1682679645.705,
+            "adsTime": "482",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "40-round-mag-kastovia",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "40 Round Mag"
+            },
+            "position": 2,
+            "weaponId": "kastov-762",
+            "createdAt": "2023-03-27T09:35:56.904Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-14T23:09:04.553Z",
+            "description": "This build uses a suppressor to slightly increase bullet velocity and damage range at the cost of some recoil control and slower ADS speed.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": -0.21
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "movementSpeed": "7.23",
+            "bulletVelocity": "864",
+            "adsMovementSpeed": "2.11",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "verticalRecoilReduction": ".83",
+            "horizontalRecoilReduction": ".83",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
             "id": "lachmann-shroud-wzstats-e56071",
             "cons": [],
             "pros": [],
@@ -12175,166 +12070,71 @@
             "externalSourceImage": null
         },
         {
-            "id": "signal-50-wzstats-C772",
+            "id": "vel-46-wzstats-dc282b",
             "cons": [],
             "pros": [],
             "type": "wz2",
             "laser": {
-                "attachmentId": "fss-ole-v-laser",
+                "attachmentId": "point-g3p-04",
                 "verticalTuning": {
-                    "value": -0.03
+                    "value": -0.48
                 },
                 "horizontalTuning": {
-                    "value": -14.81
+                    "value": 51
                 },
                 "slot": "laser",
-                "name": "FSS OLE-V laser"
+                "name": "Point-G3P 04"
             },
-            "title": "Best Build",
-            "barrel": {
-                "attachmentId": "29\"-tv-kilo-50",
-                "verticalTuning": {
-                    "value": -0.26
-                },
-                "horizontalTuning": {
-                    "value": -0.27
-                },
-                "slot": "barrel",
-                "name": "29\" TV Kilo-50"
-            },
-            "muzzle": {
-                "attachmentId": "nilsound-90-silencer",
-                "verticalTuning": {
-                    "value": -0.77
-                },
-                "horizontalTuning": {
-                    "value": 0.55
-                },
-                "slot": "muzzle",
-                "name": "Nilsound 90 Silencer"
-            },
-            "addedAt": 1683192218.444,
-            "adsTime": "717",
-            "authorId": "wzstats",
-            "position": 1,
-            "rearGrip": {
-                "attachmentId": "sa-finesse-grip",
-                "verticalTuning": {
-                    "value": -0.29
-                },
-                "horizontalTuning": {
-                    "value": 0.45
-                },
-                "slot": "rearGrip",
-                "name": "SA Finesse Grip"
-            },
-            "weaponId": "signal-50",
-            "createdAt": "2022-12-01T13:21:41.392Z",
-            "playstyle": "FIRERATE",
-            "tierScore": 990,
-            "updatedAt": "2023-09-14T23:22:32.604Z",
-            "ammunition": {
-                "attachmentId": ".50-cal-high-velocity",
-                "verticalTuning": {
-                    "value": -0.25
-                },
-                "horizontalTuning": {
-                    "value": 5.23
-                },
-                "slot": "ammunition",
-                "name": ".50 Cal High Velocity"
-            },
-            "description": "High fire rate and high bullet velocity for easier long range shots.",
-            "isPublished": true,
-            "displayOrder": 0,
-            "movementSpeed": "6.85",
-            "bulletVelocity": "1190",
-            "adsMovementSpeed": "1.14",
-            "interactionCount": null,
-            "authorDisplayName": "wzstats",
-            "isWarzoneRankedBuild": false,
-            "verticalRecoilReduction": ".96",
-            "horizontalRecoilReduction": ".96",
-            "externalSourceTitle": null,
-            "externalSourceImage": null
-        },
-        {
-            "id": "kastov-762-wzstats-315bd7",
-            "cons": [],
-            "pros": [],
-            "type": "wz2",
-            "optic": {
-                "attachmentId": "cronen-mini-pro",
-                "verticalTuning": {
-                    "value": -1.16
-                },
-                "horizontalTuning": {
-                    "value": -2.25
-                },
-                "slot": "optic",
-                "name": "Cronen Mini Pro"
+            "stock": {
+                "attachmentId": "vel-a-568-collapsed",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "stock",
+                "name": "VEL A-568 Collapsed"
             },
             "title": "",
             "barrel": {
-                "attachmentId": "ig-k30-406mm",
+                "attachmentId": "lm-series-7",
                 "verticalTuning": {
-                    "value": 0.26
+                    "value": 0.000001
                 },
                 "horizontalTuning": {
-                    "value": -0.25
+                    "value": 0.21
                 },
                 "slot": "barrel",
-                "name": "IG-K30 406mm"
+                "name": "LM Series-7"
             },
-            "muzzle": {
-                "attachmentId": "ty-lr8",
+            "addedAt": 1694731923.881,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-lmp",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 10,
+            "weaponId": "vel-46",
+            "createdAt": "2023-09-14T22:50:23.152Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-14T22:52:05.206Z",
+            "description": "The best Hip Fire build for the Vel 46.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "vx-pineapple",
                 "verticalTuning": {
                     "value": 0.8
                 },
                 "horizontalTuning": {
-                    "value": 0.14
+                    "value": 0.25
                 },
-                "slot": "muzzle",
-                "name": "TY-LR8"
+                "slot": "underbarrel",
+                "name": "VX Pineapple"
             },
-            "addedAt": 1692998095.862,
-            "adsTime": "384",
-            "authorId": "wzstats",
-            "magazine": {
-                "attachmentId": "40-round-mag-kastovia",
-                "verticalTuning": 0,
-                "horizontalTuning": 0,
-                "slot": "magazine",
-                "name": "40 Round Mag"
-            },
-            "position": 10,
-            "rearGrip": {
-                "attachmentId": "demo-x2-grip",
-                "verticalTuning": {
-                    "value": 1
-                },
-                "horizontalTuning": {
-                    "value": 0.45
-                },
-                "slot": "rearGrip",
-                "name": "Demo-X2 Grip"
-            },
-            "weaponId": "kastov-762",
-            "createdAt": "2023-08-25T21:06:40.981Z",
-            "playstyle": "LONG_RANGE",
-            "tierScore": 0,
-            "updatedAt": "2023-09-14T23:08:50.195Z",
-            "description": "This build focuses on a good balance between ADS speed, mobility and recoil control. Perfect for small maps.",
-            "isPublished": true,
             "displayOrder": 0,
-            "isAshikaBuild": true,
-            "movementSpeed": "7.23",
-            "bulletVelocity": "664",
-            "adsMovementSpeed": "2.25",
             "interactionCount": null,
             "authorDisplayName": "WZStats",
-            "verticalRecoilReduction": ".77",
-            "horizontalRecoilReduction": ".61",
             "externalSourceTitle": null,
             "externalSourceImage": null
         },
@@ -12423,14 +12223,14 @@
             "externalSourceImage": null
         },
         {
-            "id": "kastov-762-wzstats-9d0c47",
+            "id": "m13b-wzstats-b28b4f",
             "cons": [],
             "pros": [],
             "type": "wz2",
             "optic": {
                 "attachmentId": "aim-op-v4",
                 "verticalTuning": {
-                    "value": -2.13
+                    "value": -1.65
                 },
                 "horizontalTuning": {
                     "value": -1.65
@@ -12440,44 +12240,454 @@
             },
             "title": "",
             "barrel": {
-                "attachmentId": "kas-10-584mm-barrel",
+                "attachmentId": "14\"-bruen-echelon",
                 "verticalTuning": {
-                    "value": 0.23
+                    "value": 0.5
                 },
                 "horizontalTuning": {
-                    "value": -0.22
+                    "value": -0.1
                 },
                 "slot": "barrel",
-                "name": "KAS-10 584MM Barrel"
+                "name": "14\" Bruen Echelon"
             },
             "muzzle": {
-                "attachmentId": "ty-lr8",
+                "attachmentId": "harbinger-d20",
                 "verticalTuning": {
-                    "value": 0.8
+                    "value": 0.54
                 },
                 "horizontalTuning": {
-                    "value": 0.15
+                    "value": 0.58
                 },
                 "slot": "muzzle",
-                "name": "TY-LR8"
+                "name": "Harbinger D20"
             },
-            "addedAt": 1681911333.12,
-            "adsTime": "384",
+            "addedAt": 1684262329.232,
+            "adsTime": "517",
             "authorId": "wzstats",
             "magazine": {
-                "attachmentId": "40-round-mag-kastovia",
+                "attachmentId": "60-round-mag-bruen-ops",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 2,
+            "weaponId": "m13b",
+            "createdAt": "2023-05-16T18:31:44.880Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-14T23:08:24.937Z",
+            "description": "This build uses a suppressor at the cost of slow ADS speed, reduced mobility, and less recoil control.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.54
+                },
+                "horizontalTuning": {
+                    "value": 0.4
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "movementSpeed": "7.1",
+            "bulletVelocity": "794",
+            "adsMovementSpeed": "2.17",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "verticalRecoilReduction": ".86",
+            "horizontalRecoilReduction": ".86",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "m13b-wzstats-78E1",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -1.94
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "Best Build",
+            "barrel": {
+                "attachmentId": "14\"-bruen-echelon",
+                "verticalTuning": {
+                    "value": 0.45
+                },
+                "horizontalTuning": {
+                    "value": -0.13
+                },
+                "slot": "barrel",
+                "name": "14\" Bruen Echelon"
+            },
+            "muzzle": {
+                "attachmentId": "komodo-heavy",
+                "verticalTuning": {
+                    "value": 0.39
+                },
+                "horizontalTuning": {
+                    "value": 0.16
+                },
+                "slot": "muzzle",
+                "name": "Komodo Heavy"
+            },
+            "addedAt": 1681817919.056,
+            "adsTime": "449",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-bruen-ops",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 1,
+            "weaponId": "m13b",
+            "createdAt": "2022-12-01T13:21:41.392Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 992,
+            "updatedAt": "2023-09-11T11:45:35.618Z",
+            "ammunition": {
+                "attachmentId": "5.56-high-velocity",
+                "verticalTuning": {
+                    "value": -0.45
+                },
+                "horizontalTuning": {
+                    "value": -3.48
+                },
+                "slot": "ammunition",
+                "name": "5.56 High Velocity"
+            },
+            "description": "This build focuses on recoil control and ease of use at long range.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "movementSpeed": "7.1",
+            "bulletVelocity": "611",
+            "adsMovementSpeed": "2.26",
+            "interactionCount": null,
+            "authorDisplayName": "wzstats",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": ".83",
+            "horizontalRecoilReduction": ".65",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "lachmann-sub-WZStats-51N7",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "vlk-lzr-7mw",
+                "verticalTuning": {
+                    "value": -0.18
+                },
+                "horizontalTuning": {
+                    "value": -34.55
+                },
+                "slot": "laser",
+                "name": "VLK LZR 7MW"
+            },
+            "stock": {
+                "attachmentId": "ft-mobile-stock",
+                "verticalTuning": {
+                    "value": -4
+                },
+                "horizontalTuning": {
+                    "value": -2.4
+                },
+                "slot": "stock",
+                "name": "FT Mobile Stock"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "l38-falcon-226mm",
+                "verticalTuning": {
+                    "value": -0.34
+                },
+                "horizontalTuning": {
+                    "value": 0.25
+                },
+                "slot": "barrel",
+                "name": "L38 Falcon 226MM"
+            },
+            "addedAt": 1682428580.169,
+            "adsTime": "193",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "40-round-mag-lachmann-meer",
                 "verticalTuning": 0,
                 "horizontalTuning": 0,
                 "slot": "magazine",
                 "name": "40 Round Mag"
             },
             "position": 1,
-            "weaponId": "kastov-762",
-            "createdAt": "2023-04-19T13:29:15.308Z",
+            "prosCons": "",
+            "weaponId": "lachmann-sub",
+            "createdAt": "2023-03-01T20:52:33.815Z",
+            "playstyle": "SHORT_RANGE",
+            "tierScore": null,
+            "twitterId": "1637200610461118466?s=20",
+            "updatedAt": "2023-09-14T23:10:32.652Z",
+            "ammunition": {
+                "attachmentId": "9mm-hollow-point",
+                "verticalTuning": {
+                    "value": 0.5
+                },
+                "horizontalTuning": {
+                    "value": -5.52
+                },
+                "slot": "ammunition",
+                "name": "9MM Hollow Point"
+            },
+            "externalId": "1637200610461118466?s=20",
+            "description": "This Lachmann Sub is the perfect balanced for mobility & recoil control.",
+            "externalUrl": "https://twitter.com/WZStatsGG/status/1630977085870047252",
+            "isPublished": true,
+            "displayOrder": 0,
+            "movementSpeed": "7.62",
+            "bulletVelocity": "517",
+            "externalSource": "twitter",
+            "adsMovementSpeed": "3.3",
+            "interactionCount": 1525,
+            "authorDisplayName": "WZStats",
+            "externalSourceImage": null,
+            "externalSourceTitle": null,
+            "highlightDescription": "THE BEST SMG",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": "1",
+            "horizontalRecoilReduction": "1",
+            "shortHighlightDescription": "THE BEST SMG"
+        },
+        {
+            "id": "signal-50-wzstats-C772",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "laser": {
+                "attachmentId": "fss-ole-v-laser",
+                "verticalTuning": {
+                    "value": -0.03
+                },
+                "horizontalTuning": {
+                    "value": -14.81
+                },
+                "slot": "laser",
+                "name": "FSS OLE-V laser"
+            },
+            "title": "Best Build",
+            "barrel": {
+                "attachmentId": "29\"-tv-kilo-50",
+                "verticalTuning": {
+                    "value": -0.26
+                },
+                "horizontalTuning": {
+                    "value": -0.27
+                },
+                "slot": "barrel",
+                "name": "29\" TV Kilo-50"
+            },
+            "muzzle": {
+                "attachmentId": "nilsound-90-silencer",
+                "verticalTuning": {
+                    "value": -0.77
+                },
+                "horizontalTuning": {
+                    "value": 0.55
+                },
+                "slot": "muzzle",
+                "name": "Nilsound 90 Silencer"
+            },
+            "addedAt": 1683192218.444,
+            "adsTime": "717",
+            "authorId": "wzstats",
+            "position": 1,
+            "rearGrip": {
+                "attachmentId": "sa-finesse-grip",
+                "verticalTuning": {
+                    "value": -0.29
+                },
+                "horizontalTuning": {
+                    "value": 0.45
+                },
+                "slot": "rearGrip",
+                "name": "SA Finesse Grip"
+            },
+            "weaponId": "signal-50",
+            "createdAt": "2022-12-01T13:21:41.392Z",
+            "playstyle": "FIRERATE",
+            "tierScore": 990,
+            "updatedAt": "2023-09-14T23:22:32.604Z",
+            "ammunition": {
+                "attachmentId": ".50-cal-high-velocity",
+                "verticalTuning": {
+                    "value": -0.25
+                },
+                "horizontalTuning": {
+                    "value": 5.23
+                },
+                "slot": "ammunition",
+                "name": ".50 Cal High Velocity"
+            },
+            "description": "High fire rate and high bullet velocity for easier long range shots.",
+            "isPublished": true,
+            "displayOrder": 0,
+            "movementSpeed": "6.85",
+            "bulletVelocity": "1190",
+            "adsMovementSpeed": "1.14",
+            "interactionCount": null,
+            "authorDisplayName": "wzstats",
+            "isWarzoneRankedBuild": false,
+            "verticalRecoilReduction": ".96",
+            "horizontalRecoilReduction": ".96",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "tempus-razorback-wzstats-bfaaf5",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -1.06
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "16\"-tankr-v",
+                "verticalTuning": {
+                    "value": 0.5
+                },
+                "horizontalTuning": {
+                    "value": 0.12
+                },
+                "slot": "barrel",
+                "name": "16\" TANKR-V"
+            },
+            "muzzle": {
+                "attachmentId": "harbinger-d20",
+                "verticalTuning": {
+                    "value": 1.4
+                },
+                "horizontalTuning": {
+                    "value": -0.19
+                },
+                "slot": "muzzle",
+                "name": "Harbinger D20"
+            },
+            "addedAt": 1687256797.408,
+            "adsTime": "500",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-tidal-recon",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 1,
+            "weaponId": "tempus-razorback",
+            "createdAt": "2023-06-20T10:17:14.244Z",
             "playstyle": "LONG_RANGE",
             "tierScore": 0,
-            "updatedAt": "2023-09-10T15:08:05.620Z",
-            "description": "This build focuses recoil control to be as effective as possible and easy to use at long range.",
+            "updatedAt": "2023-09-19T15:38:50.884Z",
+            "description": "This Loadout is the perfect balance between recoil control and bullet velocity. It has a fast TTK and it is very easy to use, making it an excellent option for long range.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "dm-proto-grip",
+                "verticalTuning": {
+                    "value": 0.34
+                },
+                "horizontalTuning": {
+                    "value": 0.14
+                },
+                "slot": "underbarrel",
+                "name": "DM Proto-Grip"
+            },
+            "displayOrder": 0,
+            "movementSpeed": "6.85",
+            "bulletVelocity": "896",
+            "adsMovementSpeed": "1.85",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": false,
+            "verticalRecoilReduction": ".79",
+            "horizontalRecoilReduction": ".54",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "taq-56-wzstats-c14ab4",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "stock": {
+                "attachmentId": "tactique-brute-stock",
+                "verticalTuning": {
+                    "value": 1.16
+                },
+                "horizontalTuning": {
+                    "value": 0.85
+                },
+                "slot": "stock",
+                "name": "Tactique Brute Stock"
+            },
+            "title": "",
+            "muzzle": {
+                "attachmentId": "komodo-heavy",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.12
+                },
+                "slot": "muzzle",
+                "name": "Komodo Heavy"
+            },
+            "addedAt": 1695197175.132,
+            "adsTime": "346",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-tactique-verte",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 10,
+            "rearGrip": {
+                "attachmentId": "fss-combat-grip",
+                "verticalTuning": {
+                    "value": 0.42
+                },
+                "horizontalTuning": {
+                    "value": 0.39
+                },
+                "slot": "rearGrip",
+                "name": "FSS Combat Grip"
+            },
+            "weaponId": "taq-56",
+            "createdAt": "2023-09-20T07:56:38.892Z",
+            "playstyle": "LOW_RECOIL",
+            "tierScore": 0,
+            "updatedAt": "2023-09-20T08:06:15.272Z",
+            "description": "This build has the lowest recoil possible for the TAQ-56. It comes at the cost of using the base weapons Bullet Velocity. ",
             "isPublished": true,
             "underbarrel": {
                 "attachmentId": "ftac-ripper-56",
@@ -12491,14 +12701,247 @@
                 "name": "FTAC Ripper 56"
             },
             "displayOrder": 0,
-            "movementSpeed": "7.26",
-            "bulletVelocity": "957",
-            "adsMovementSpeed": "2.25",
+            "movementSpeed": "7.22",
+            "bulletVelocity": "590",
+            "adsMovementSpeed": "2.22",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "verticalRecoilReduction": ".81",
+            "horizontalRecoilReduction": ".65",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "tempus-razorback-wzstats-5b6cc0",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -1.06
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "16\"-tankr-v",
+                "verticalTuning": {
+                    "value": 0.5
+                },
+                "horizontalTuning": {
+                    "value": 0.21
+                },
+                "slot": "barrel",
+                "name": "16\" TANKR-V"
+            },
+            "muzzle": {
+                "attachmentId": "fjx-fulcrum-pro",
+                "verticalTuning": {
+                    "value": 0.49
+                },
+                "horizontalTuning": {
+                    "value": -0.08
+                },
+                "slot": "muzzle",
+                "name": "FJX Fulcrum Pro"
+            },
+            "addedAt": 1690245646.191,
+            "adsTime": "432",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-tidal-recon",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 2,
+            "weaponId": "tempus-razorback",
+            "createdAt": "2023-06-14T18:10:43.464Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-19T15:39:06.899Z",
+            "description": "This build is optimized for long range engagements. Extremely low recoil.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "dm-proto-grip",
+                "verticalTuning": {
+                    "value": 0.34
+                },
+                "horizontalTuning": {
+                    "value": 0.14
+                },
+                "slot": "underbarrel",
+                "name": "DM Proto-Grip"
+            },
+            "displayOrder": 0,
+            "movementSpeed": "6.85",
+            "bulletVelocity": "689",
+            "adsMovementSpeed": "1.94",
             "interactionCount": null,
             "authorDisplayName": "WZStats",
             "isWarzoneRankedBuild": true,
-            "verticalRecoilReduction": ".83",
-            "horizontalRecoilReduction": ".67",
+            "verticalRecoilReduction": ".68",
+            "horizontalRecoilReduction": ".5",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "m4-wzstats-41241a",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -1.65
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "hightower-20\"-barrel",
+                "verticalTuning": {
+                    "value": 0.18
+                },
+                "horizontalTuning": {
+                    "value": 0.4
+                },
+                "slot": "barrel",
+                "name": "Hightower 20\" Barrel"
+            },
+            "muzzle": {
+                "attachmentId": "komodo-heavy",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.35
+                },
+                "slot": "muzzle",
+                "name": "Komodo Heavy"
+            },
+            "addedAt": 1681816214.431,
+            "adsTime": "460",
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "60-round-mag-m4",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "60 Round Mag"
+            },
+            "position": 1,
+            "weaponId": "m4",
+            "createdAt": "2023-04-18T11:00:06.612Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-14T23:23:02.256Z",
+            "description": "This build focuses on recoil control for ease of use at long ranges.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.26
+                },
+                "horizontalTuning": {
+                    "value": -0.4
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "movementSpeed": "7.16",
+            "bulletVelocity": "720",
+            "adsMovementSpeed": "2.27",
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": true,
+            "verticalRecoilReduction": ".81",
+            "horizontalRecoilReduction": ".61",
+            "externalSourceTitle": null,
+            "externalSourceImage": null
+        },
+        {
+            "id": "tr-76-geist-wzstats-14bb9e",
+            "cons": [],
+            "pros": [],
+            "type": "wz2",
+            "optic": {
+                "attachmentId": "aim-op-v4",
+                "verticalTuning": {
+                    "value": -1.65
+                },
+                "horizontalTuning": {
+                    "value": -1.65
+                },
+                "slot": "optic",
+                "name": "Aim OP-V4"
+            },
+            "title": "",
+            "barrel": {
+                "attachmentId": "bruen-bridle-60",
+                "verticalTuning": {
+                    "value": 0.23
+                },
+                "horizontalTuning": {
+                    "value": 0.14
+                },
+                "slot": "barrel",
+                "name": "Bruen Bridle 60"
+            },
+            "muzzle": {
+                "attachmentId": "ty-lr8",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.23
+                },
+                "slot": "muzzle",
+                "name": "TY-LR8"
+            },
+            "addedAt": 1695394217.548,
+            "authorId": "wzstats",
+            "magazine": {
+                "attachmentId": "45-round-mag-iso",
+                "verticalTuning": 0,
+                "horizontalTuning": 0,
+                "slot": "magazine",
+                "name": "45 Round Mag"
+            },
+            "position": 10,
+            "weaponId": "tr-76-geist",
+            "createdAt": "2023-09-22T14:47:35.987Z",
+            "playstyle": "LONG_RANGE",
+            "tierScore": 0,
+            "updatedAt": "2023-09-27T19:43:46.532Z",
+            "description": "New Season 6 Assault Rifle. High damage, fast time to kill, manageable recoil.",
+            "isPublished": true,
+            "underbarrel": {
+                "attachmentId": "ftac-ripper-56",
+                "verticalTuning": {
+                    "value": 0.8
+                },
+                "horizontalTuning": {
+                    "value": 0.12
+                },
+                "slot": "underbarrel",
+                "name": "FTAC Ripper 56"
+            },
+            "displayOrder": 0,
+            "interactionCount": null,
+            "authorDisplayName": "WZStats",
+            "isWarzoneRankedBuild": true,
             "externalSourceTitle": null,
             "externalSourceImage": null
         }
