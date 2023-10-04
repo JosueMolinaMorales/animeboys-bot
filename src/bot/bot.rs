@@ -1,5 +1,6 @@
 use crate::{
     aws::{self, ecs_commands::EcsCommands},
+    chatgpt::{AnimeboysAI, ChatGPTCommands},
     wz::WzLoadoutCommands,
 };
 use serenity::async_trait;
@@ -17,15 +18,19 @@ pub struct Bot {
     pub ec2_client: aws_sdk_ec2::Client,
     /// The role assigned to all new members of the server
     pub member_role: u64,
+    /// The chatgpt ai
+    pub ai: AnimeboysAI,
 }
 
 impl Bot {
-    pub async fn new(instance_id: String) -> Bot {
+    pub async fn new(instance_id: String, api_key: String) -> Bot {
         let client = aws::create_ecs_client().await;
+        let ai = AnimeboysAI::new(&api_key);
         Bot {
             instance_id,
             ec2_client: client,
             member_role: 342563599572664321,
+            ai,
         }
     }
 
@@ -34,6 +39,7 @@ impl Bot {
     Welcome to the Animeboys Bot! Here are the commands you can use:
         `$mc help` - Displays the help message for managing the minecraft server
         `$wz help` - Displays the help message for managing the warzone server
+        `$ai help` - Displays the help message for using the AI
         `$help`    - Displays this message
         "
         .into()
@@ -113,6 +119,10 @@ impl EventHandler for Bot {
             "$wz" => {
                 command.remove(0);
                 self.wz_loadout_handler(command, &ctx, &msg).await;
+            }
+            "$ai" => {
+                command.remove(0);
+                self.animeboys_ai_handler(command, &ctx, &msg).await;
             }
             "$help" => {
                 if let Err(e) = msg.channel_id.say(&ctx.http, self.print_help().await).await {
