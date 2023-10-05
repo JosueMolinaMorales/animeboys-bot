@@ -1,53 +1,33 @@
+use std::collections::HashSet;
+
 use crate::{
-    aws::{self, ecs_commands::EcsCommands},
-    chatgpt::{AnimeboysAI, ChatGPTCommands},
-    wz::WzLoadoutCommands,
+    aws::{command::MINECRAFTCOMMANDS_GROUP, ec2::Ec2Client},
+    chatgpt::animeboys_ai::{AnimeboysAI, AICOMMANDS_GROUP},
+    wz::WZCOMMANDS_GROUP,
 };
-use serenity::async_trait;
-use serenity::model::channel::Message;
-use serenity::model::gateway::Ready;
-use serenity::model::prelude::Member;
-use serenity::prelude::*;
+use serenity::{
+    async_trait,
+    framework::{
+        standard::{
+            help_commands,
+            macros::{group, help},
+            CommandGroup, DispatchError, HelpOptions,
+        },
+        StandardFramework,
+    },
+    model::prelude::UserId,
+};
+use serenity::{framework::standard::macros::command, model::gateway::Ready};
+use serenity::{framework::standard::macros::hook, model::channel::Message};
+use serenity::{framework::standard::Args, model::prelude::Member};
+use serenity::{framework::standard::CommandResult, prelude::*};
 use tracing::{error, info};
 
-const CHANNEL_ID: u64 = 1081598245358276721;
-pub struct Bot {
-    /// The instance id of the ec2 instance
-    pub instance_id: String,
-    /// The profile to use when connecting to aws
-    pub ec2_client: aws_sdk_ec2::Client,
-    /// The role assigned to all new members of the server
-    pub member_role: u64,
-    /// The chatgpt ai
-    pub ai: AnimeboysAI,
-}
-
-impl Bot {
-    pub async fn new(instance_id: String, api_key: String) -> Bot {
-        let client = aws::create_ecs_client().await;
-        let ai = AnimeboysAI::new(&api_key);
-        Bot {
-            instance_id,
-            ec2_client: client,
-            member_role: 342563599572664321,
-            ai,
-        }
-    }
-
-    pub async fn print_help(&self) -> String {
-        "
-    Welcome to the Animeboys Bot! Here are the commands you can use:
-        `$mc help` - Displays the help message for managing the minecraft server
-        `$wz help` - Displays the help message for managing the warzone server
-        `$ai help` - Displays the help message for using the AI
-        `$help`    - Displays this message
-        "
-        .into()
-    }
-}
+const MEMBER_ROLE_ID: u64 = 342563599572664321;
+struct Handler;
 
 #[async_trait]
-impl EventHandler for Bot {
+impl EventHandler for Handler {
     async fn guild_member_addition(&self, ctx: Context, new_member: Member) {
         // Send the user a welcome message
         if let Err(e) = new_member
@@ -72,7 +52,7 @@ impl EventHandler for Bot {
             .add_member_role(
                 guild_id,
                 user_id,
-                self.member_role,
+                MEMBER_ROLE_ID,
                 Some("Animeboys Bot Added Role to User"),
             )
             .await
@@ -81,82 +61,161 @@ impl EventHandler for Bot {
         }
     }
 
-    async fn message(&self, ctx: Context, msg: Message) {
-        // Ignore messages from self
-        if msg.author.bot {
-            return;
-        }
-        if msg.channel_id.0 != CHANNEL_ID && !msg.is_private() {
-            info!("Message sent in wrong channel");
-            return;
-        }
-        info!("Message received from {}", msg.author.tag());
+    async fn ready(&self, _: Context, ready: Ready) {
+        println!("{} is connected!", ready.user.name);
+    }
+}
 
-        info!("Message received: {}", msg.content);
+#[group]
+#[commands(ping)]
+struct General;
 
-        // Get the prefix of the message
-        let mut command = msg.content.split(' ').collect::<Vec<&str>>();
-        let prefix = command[0];
-        match prefix.to_ascii_lowercase().as_str() {
-            "$mc" => {
-                // Ensure there is a command after the prefix
-                if command.len() < 2 {
-                    if let Err(e) = msg
-                        .channel_id
-                        .say(
-                            &ctx.http,
-                            "Unknown command. Try $mc help for a list of commands.",
-                        )
-                        .await
-                    {
-                        error!("Error sending message: {:?}", e);
-                    }
-                    return;
-                }
-                let command = command[1];
-                self.ec2_handler(command, &ctx, &msg).await;
-            }
-            "$wz" => {
-                command.remove(0);
-                self.wz_loadout_handler(command, &ctx, &msg).await;
-            }
-            "$ai" => {
-                command.remove(0);
-                self.animeboys_ai_handler(command, &ctx, &msg).await;
-            }
-            "$help" => {
-                if let Err(e) = msg.channel_id.say(&ctx.http, self.print_help().await).await {
-                    error!("Error sending message: {:?}", e);
-                }
-            }
-            "$hi" => {
-                if let Err(e) = msg
-                    .channel_id
-                    .say(&ctx.http, format!("Hello {}!", msg.author.name))
-                    .await
-                {
-                    error!("Error sending message: {:?}", e);
-                }
-            }
-            prefix => {
-                if !prefix.starts_with('$') {
-                    return;
-                }
-                if let Err(e) = msg
-                    .channel_id
-                    .say(
-                        &ctx.http,
-                        "Unknown command. Try $help for a list of commands.",
-                    )
-                    .await
-                {
-                    error!("Error sending message: {:?}", e);
-                }
-            }
+#[command]
+async fn ping(ctx: &Context, msg: &Message) -> CommandResult {
+    msg.channel_id.say(&ctx.http, "Pong!").await?;
+
+    Ok(())
+}
+
+// The framework provides two built-in help commands for you to use.
+// But you can also make your own customized help command that forwards
+// to the behaviour of either of them.
+#[help]
+// This replaces the information that a user can pass
+// a command-name as argument to gain specific information about it.
+#[individual_command_tip = "Hello! こんにちは！Hola! Bonjour! 您好! 안녕하세요~\n\n\
+If you want more information about a specific command, just pass the command as argument."]
+// Some arguments require a `{}` in order to replace it with contextual information.
+// In this case our `{}` refers to a command's name.
+#[command_not_found_text = "Could not find: `{}`."]
+// On another note, you can set up the help-menu-filter-behaviour.
+// Here are all possible settings shown on all possible options.
+// First case is if a user lacks permissions for a command, we can hide the command.
+#[lacking_permissions = "Hide"]
+// If the user is nothing but lacking a certain role, we just display it hence our variant is `Nothing`.
+#[lacking_role = "Nothing"]
+// The last `enum`-variant is `Strike`, which ~~strikes~~ a command.
+#[wrong_channel = "Strike"]
+// Serenity will automatically analyse and generate a hint/tip explaining the possible
+// cases of ~~strikethrough-commands~~, but only if
+// `strikethrough_commands_tip_in_{dm, guild}` aren't specified.
+// If you pass in a value, it will be displayed instead.
+async fn my_help(
+    context: &Context,
+    msg: &Message,
+    args: Args,
+    help_options: &'static HelpOptions,
+    groups: &[&'static CommandGroup],
+    owners: HashSet<UserId>,
+) -> CommandResult {
+    let _ = help_commands::with_embeds(context, msg, args, help_options, groups, owners).await?;
+    Ok(())
+}
+
+#[hook]
+async fn unknown_command(ctx: &Context, msg: &Message, unknown_command_name: &str) {
+    msg.channel_id
+        .say(
+            &ctx.http,
+            format!("Could not find command named '{}'", unknown_command_name),
+        )
+        .await
+        .unwrap();
+}
+
+#[hook]
+async fn dispatch_error(ctx: &Context, msg: &Message, error: DispatchError, _command_name: &str) {
+    match error {
+        DispatchError::NotEnoughArguments { min, given } => {
+            msg.channel_id
+                .say(
+                    &ctx.http,
+                    &format!(
+                        "Command expected at least {} arguments, found: {}",
+                        min, given
+                    ),
+                )
+                .await
+                .unwrap();
+        }
+        DispatchError::TooManyArguments { max, given } => {
+            msg.channel_id
+                .say(
+                    &ctx.http,
+                    &format!(
+                        "Command expected at most {} arguments, found: {}",
+                        max, given
+                    ),
+                )
+                .await
+                .unwrap();
+        }
+        _ => {
+            msg.channel_id
+                .say(&ctx.http, "Something went wrong")
+                .await
+                .unwrap();
+            // Contact the dev that something went wrong
+            let dm = 1155886697582690345;
+            ctx.http
+                .send_message(
+                    dm,
+                    &serde_json::json!({
+                        "content": format!("Error: {:#?}", error),
+                    }),
+                )
+                .await
+                .unwrap();
         }
     }
+}
 
-    async fn ready(&self, _ctx: Context, ready: Ready) {
-        info!("{} is connected!", ready.user.name);
-    }
+#[hook]
+async fn before(_ctx: &Context, msg: &Message, command_name: &str) -> bool {
+    info!(
+        "Got command '{}' by user '{}'",
+        command_name, msg.author.name
+    );
+
+    // true -> continue, false -> do not continue
+    true
+}
+
+/// Create Bot Framework
+pub fn create_framework() -> StandardFramework {
+    let framework = StandardFramework::new()
+        .configure(|c| c.prefix("$"))
+        // Set a function that's called whenever an attempted command-call's
+        // command could not be found.
+        .unrecognised_command(unknown_command)
+        // Set a function that's called whenever a command's execution didn't complete for one
+        // reason or another. For example, when a user has exceeded a rate-limit or a command
+        // can only be performed by the bot owner.
+        .on_dispatch_error(dispatch_error)
+        .before(before)
+        .help(&MY_HELP)
+        .group(&GENERAL_GROUP)
+        .group(&AICOMMANDS_GROUP)
+        .group(&MINECRAFTCOMMANDS_GROUP)
+        .group(&WZCOMMANDS_GROUP);
+
+    framework
+}
+
+pub async fn create_bot(
+    token: String,
+    intents: GatewayIntents,
+    api_key: String,
+    instance_id: String,
+) -> Client {
+    let framework = create_framework();
+    let client = Client::builder(&token, intents)
+        .event_handler(Handler)
+        .framework(framework)
+        .type_map_insert::<AnimeboysAI>(AnimeboysAI::new(&api_key))
+        .type_map_insert::<Ec2Client>(Ec2Client::new(instance_id).await)
+        .await
+        .expect("Err creating client");
+
+    client
 }
