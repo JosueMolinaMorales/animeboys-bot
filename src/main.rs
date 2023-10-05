@@ -1,4 +1,3 @@
-use animeboys_bot::bot::Bot;
 use dotenv::dotenv;
 use serenity::prelude::*;
 
@@ -22,10 +21,7 @@ async fn main() {
         | GatewayIntents::GUILDS
         | GatewayIntents::DIRECT_MESSAGES;
 
-    let mut client = Client::builder(&token, intents)
-        .event_handler(Bot::new(instance_id, api_key).await)
-        .await
-        .expect("Error creating client");
+    let mut client = animeboys_bot::bot::create_bot(token, intents, api_key, instance_id).await;
 
     if let Err(why) = client.start().await {
         println!("Error starting client: {:?}", why);
