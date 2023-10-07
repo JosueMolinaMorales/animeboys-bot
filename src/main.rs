@@ -11,15 +11,10 @@ async fn main() {
         .with_max_level(tracing::Level::DEBUG)
         .compact()
         .init();
-    let token = std::env::var("DISCORD_TOKEN").expect("DISORD_TOKEN is required");
+    let token = std::env::var("DISCORD_TOKEN").expect("DISCORD_TOKEN is required");
     let instance_id = std::env::var("INSTANCE_ID").expect("INSTANCE_ID is required");
     let api_key = std::env::var("OPENAI_API_KEY").expect("OPENAI_API_KEY is required");
-    let intents = GatewayIntents::GUILD_MESSAGES
-        | GatewayIntents::MESSAGE_CONTENT
-        | GatewayIntents::GUILD_MEMBERS
-        | GatewayIntents::GUILD_PRESENCES
-        | GatewayIntents::GUILDS
-        | GatewayIntents::DIRECT_MESSAGES;
+    let intents = GatewayIntents::all();
 
     let mut client = animeboys_bot::bot::create_bot(token, intents, api_key, instance_id).await;
 

@@ -2,8 +2,8 @@ use std::time::Duration;
 
 use serenity::{
     framework::standard::{
-        macros::{command, group},
-        Args, CommandResult,
+        macros::{check, command, group},
+        Args, CommandOptions, CommandResult, Reason,
     },
     model::channel::Message,
     prelude::Context,
@@ -43,16 +43,8 @@ async fn help(ctx: &Context, msg: &Message) -> CommandResult {
 #[example("start")]
 #[min_args(0)]
 #[max_args(0)]
+#[checks(MinecraftAdmin)]
 async fn start(ctx: &Context, msg: &Message) -> CommandResult {
-    if !has_minecraft_access(msg).await {
-        msg.channel_id
-            .say(
-                &ctx.http,
-                "You are not authorized to use this command. Please contact an admin.",
-            )
-            .await?;
-        return Ok(());
-    }
     msg.channel_id
         .say(&ctx.http, "Starting instance...")
         .await?;
@@ -134,16 +126,8 @@ async fn start(ctx: &Context, msg: &Message) -> CommandResult {
 #[example("stop")]
 #[min_args(0)]
 #[max_args(0)]
+#[checks(MinecraftAdmin)]
 async fn stop(ctx: &Context, msg: &Message) -> CommandResult {
-    if !has_minecraft_access(msg).await {
-        msg.channel_id
-            .say(
-                &ctx.http,
-                "You are not authorized to use this command. Please contact an admin.",
-            )
-            .await?;
-        return Ok(());
-    }
     msg.channel_id
         .say(&ctx.http, "Stopping instance...")
         .await?;
@@ -238,13 +222,20 @@ async fn getip(ctx: &Context, msg: &Message, _args: Args) -> CommandResult {
     Ok(())
 }
 
-/// Checks that the user has the "MinecraftSquad" Role
-/// # Arguments
-/// * `ctx` - The context of the message
-/// * `msg` - The message
-/// # Returns
-/// True if the user has the role, false otherwise
-async fn has_minecraft_access(msg: &Message) -> bool {
+#[check]
+#[name = "MinecraftAdmin"]
+async fn has_minecraft_access(
+    _: &Context,
+    msg: &Message,
+    _: &mut Args,
+    _: &CommandOptions,
+) -> Result<(), Reason> {
     // Check that the user's username is in the AUTHORIZED_USERS array
-    AUTHORIZED_USERS.contains(&msg.author.tag().as_str())
+    if !AUTHORIZED_USERS.contains(&msg.author.tag().as_str()) {
+        return Err(Reason::User(
+            "You are not authorized to use this command".into(),
+        ));
+    }
+
+    Ok(())
 }

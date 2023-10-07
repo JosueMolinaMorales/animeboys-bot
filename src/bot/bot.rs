@@ -15,7 +15,7 @@ use serenity::{
         },
         StandardFramework,
     },
-    model::prelude::UserId,
+    model::prelude::{GuildChannel, PartialGuildChannel, UserId},
 };
 use serenity::{framework::standard::macros::command, model::gateway::Ready};
 use serenity::{framework::standard::macros::hook, model::channel::Message};
@@ -28,6 +28,25 @@ struct Handler;
 
 #[async_trait]
 impl EventHandler for Handler {
+    async fn thread_update(&self, ctx: Context, thread: GuildChannel) {
+        info!("Updating thread: {}", thread.id);
+        // If the thread is locked, then remove it from the AI
+        if thread.thread_metadata.unwrap().locked {
+            // Delete the thread from the AI
+            let mut data = ctx.data.write().await;
+            let ai = data.get_mut::<AnimeboysAI>().unwrap();
+            ai.remove_thread(&thread.id).await;
+        }
+    }
+
+    async fn thread_delete(&self, ctx: Context, thread: PartialGuildChannel) {
+        info!("Deleting thread: {}", thread.id);
+        // Delete the thread from the AI
+        let mut data = ctx.data.write().await;
+        let ai = data.get_mut::<AnimeboysAI>().unwrap();
+        ai.remove_thread(&thread.id).await;
+    }
+
     async fn guild_member_addition(&self, ctx: Context, new_member: Member) {
         // Send the user a welcome message
         if let Err(e) = new_member
@@ -181,6 +200,58 @@ async fn before(_ctx: &Context, msg: &Message, command_name: &str) -> bool {
     true
 }
 
+#[hook]
+async fn normal_message(ctx: &Context, msg: &Message) {
+    info!("Got message '{}'", msg.content);
+    // Check to see if the message was sent in a thread
+    let mut data = ctx.data.write().await;
+    let ai = data.get_mut::<AnimeboysAI>().unwrap();
+
+    if ai.does_thread_exist(&msg.channel_id) {
+        info!("Message was sent in a thread");
+        // Start Typing
+        let typing = ctx.http.start_typing(msg.channel_id.0).unwrap();
+        // Send the message to the AI
+        let response = ai.send_message(&msg.content, &msg.channel_id).await;
+
+        // Get the guild channel from the channel id
+        let channel = ctx
+            .http
+            .get_channel(msg.channel_id.0)
+            .await
+            .unwrap()
+            .guild()
+            .unwrap();
+
+        // Send the response to the thread
+        send_message_in_streams(ctx, channel, response)
+            .await
+            .unwrap();
+        // Stop typing
+        drop(typing);
+    }
+}
+
+/// Sends a message in multiple streams
+/// If the message is too long, then it will be split into multiple messages
+/// and sent in multiple streams
+pub async fn send_message_in_streams(
+    ctx: &Context,
+    channel: GuildChannel,
+    msg: String,
+) -> CommandResult {
+    if msg.bytes().len() > 2000 {
+        let msg = msg.bytes().collect::<Vec<u8>>();
+        for chunk in msg.chunks(2000) {
+            let msg = String::from_utf8(chunk.to_vec()).unwrap();
+            channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+        }
+    } else {
+        channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+    }
+    Ok(())
+}
+
 /// Create Bot Framework
 pub fn create_framework() -> StandardFramework {
     let framework = StandardFramework::new()
@@ -192,6 +263,7 @@ pub fn create_framework() -> StandardFramework {
         // reason or another. For example, when a user has exceeded a rate-limit or a command
         // can only be performed by the bot owner.
         .on_dispatch_error(dispatch_error)
+        .normal_message(normal_message)
         .before(before)
         .help(&MY_HELP)
         .group(&GENERAL_GROUP)
