@@ -1,4 +1,4 @@
-use aws_sdk_ec2::Region;
+use aws_types::region::Region;
 use serenity::prelude::TypeMapKey;
 
 use super::error::Ec2Error;

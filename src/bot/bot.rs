@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 use crate::{
     aws::{command::MINECRAFTCOMMANDS_GROUP, ec2::Ec2Client},
-    chatgpt::animeboys_ai::{AnimeboysAI, AICOMMANDS_GROUP},
+    chatgpt::{animeboys_ai::AnimeboysAI, command::AICOMMANDS_GROUP},
     wz::WZCOMMANDS_GROUP,
 };
 use serenity::{
@@ -15,7 +15,7 @@ use serenity::{
         },
         StandardFramework,
     },
-    model::prelude::{GuildChannel, PartialGuildChannel, UserId},
+    model::prelude::{Channel, GuildChannel, PartialGuildChannel, UserId},
 };
 use serenity::{framework::standard::macros::command, model::gateway::Ready};
 use serenity::{framework::standard::macros::hook, model::channel::Message};
@@ -35,7 +35,7 @@ impl EventHandler for Handler {
             // Delete the thread from the AI
             let mut data = ctx.data.write().await;
             let ai = data.get_mut::<AnimeboysAI>().unwrap();
-            ai.remove_thread(&thread.id).await;
+            ai.remove_conversation(&thread.id).await;
         }
     }
 
@@ -44,7 +44,7 @@ impl EventHandler for Handler {
         // Delete the thread from the AI
         let mut data = ctx.data.write().await;
         let ai = data.get_mut::<AnimeboysAI>().unwrap();
-        ai.remove_thread(&thread.id).await;
+        ai.remove_conversation(&thread.id).await;
     }
 
     async fn guild_member_addition(&self, ctx: Context, new_member: Member) {
@@ -170,10 +170,6 @@ async fn dispatch_error(ctx: &Context, msg: &Message, error: DispatchError, _com
                 .unwrap();
         }
         _ => {
-            msg.channel_id
-                .say(&ctx.http, "Something went wrong")
-                .await
-                .unwrap();
             // Contact the dev that something went wrong
             let dm = 1155886697582690345;
             ctx.http
@@ -207,7 +203,7 @@ async fn normal_message(ctx: &Context, msg: &Message) {
     let mut data = ctx.data.write().await;
     let ai = data.get_mut::<AnimeboysAI>().unwrap();
 
-    if ai.does_thread_exist(&msg.channel_id) {
+    if ai.does_conversation_exist(&msg.channel_id) {
         info!("Message was sent in a thread");
         // Start Typing
         let typing = ctx.http.start_typing(msg.channel_id.0).unwrap();
@@ -215,13 +211,7 @@ async fn normal_message(ctx: &Context, msg: &Message) {
         let response = ai.send_message(&msg.content, &msg.channel_id).await;
 
         // Get the guild channel from the channel id
-        let channel = ctx
-            .http
-            .get_channel(msg.channel_id.0)
-            .await
-            .unwrap()
-            .guild()
-            .unwrap();
+        let channel = ctx.http.get_channel(msg.channel_id.0).await.unwrap();
 
         // Send the response to the thread
         send_message_in_streams(ctx, channel, response)
@@ -229,6 +219,8 @@ async fn normal_message(ctx: &Context, msg: &Message) {
             .unwrap();
         // Stop typing
         drop(typing);
+    } else {
+        info!("Message was not sent in a thread");
     }
 }
 
@@ -237,18 +229,35 @@ async fn normal_message(ctx: &Context, msg: &Message) {
 /// and sent in multiple streams
 pub async fn send_message_in_streams(
     ctx: &Context,
-    channel: GuildChannel,
+    channel: Channel,
     msg: String,
 ) -> CommandResult {
-    if msg.bytes().len() > 2000 {
-        let msg = msg.bytes().collect::<Vec<u8>>();
-        for chunk in msg.chunks(2000) {
-            let msg = String::from_utf8(chunk.to_vec()).unwrap();
-            channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+    match channel {
+        Channel::Private(channel) => {
+            if msg.bytes().len() > 2000 {
+                let msg = msg.bytes().collect::<Vec<u8>>();
+                for chunk in msg.chunks(2000) {
+                    let msg = String::from_utf8(chunk.to_vec()).unwrap();
+                    channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+                }
+            } else {
+                channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+            }
         }
-    } else {
-        channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+        Channel::Guild(channel) => {
+            if msg.bytes().len() > 2000 {
+                let msg = msg.bytes().collect::<Vec<u8>>();
+                for chunk in msg.chunks(2000) {
+                    let msg = String::from_utf8(chunk.to_vec()).unwrap();
+                    channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+                }
+            } else {
+                channel.send_message(&ctx.http, |m| m.content(msg)).await?;
+            }
+        }
+        _ => {}
     }
+
     Ok(())
 }
 
