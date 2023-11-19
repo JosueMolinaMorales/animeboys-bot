@@ -11,7 +11,7 @@ use serenity::{
 
 use crate::aws::ec2::Ec2Client;
 
-const AUTHORIZED_USERS: [&str; 3] = ["faultsmelts#0000", "ChrisW#6807", "Gio#6333"];
+const AUTHORIZED_USERS: [&str; 3] = ["faultsmelts#0000", "chrisw6807#0000", "Gio#6333"];
 
 #[group("Minecraft Commands")]
 #[prefixes("minecraft", "mc")]
@@ -225,13 +225,16 @@ async fn getip(ctx: &Context, msg: &Message, _args: Args) -> CommandResult {
 #[check]
 #[name = "MinecraftAdmin"]
 async fn has_minecraft_access(
-    _: &Context,
+    ctx: &Context,
     msg: &Message,
     _: &mut Args,
     _: &CommandOptions,
 ) -> Result<(), Reason> {
     // Check that the user's username is in the AUTHORIZED_USERS array
     if !AUTHORIZED_USERS.contains(&msg.author.tag().as_str()) {
+        msg.reply(ctx, "You are not authorized to use this command")
+            .await
+            .unwrap();
         return Err(Reason::User(
             "You are not authorized to use this command".into(),
         ));
